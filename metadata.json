@@ -1,0 +1,7 @@
+{
+  "name": "ReviewFlow AI",
+  "description": "Scale your Google rating automatically. Smart funnels, print-ready QR flyers, and human-like AI review draft assistants to boost local visibility.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
