@@ -27,9 +27,13 @@ import { SignInPage } from './components/SignInPage';
 import { RegisterPage } from './components/RegisterPage';
 import { OnboardingWizard } from './components/OnboardingWizard';
 import { BusinessDashboard } from './components/BusinessDashboard';
+import { PublicFunnelView } from './components/PublicFunnelView';
+import { AdminPortalView } from './components/AdminPortalView';
+import { getStoredToken, removeStoredToken, api } from './services/api';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<ViewType>('home');
+  const [funnelSlug, setFunnelSlug] = useState('muzaffarabad-reviews');
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState<'signin' | 'register'>('register');
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
@@ -57,9 +61,77 @@ export default function App() {
   };
 
   const handleNavigate = (view: ViewType) => {
+    const protectedViews: ViewType[] = [
+      'dashboard', 'analytics', 'feedback', 'settings', 'stand', 'services', 'billing', 'account', 'admin'
+    ];
+    if (protectedViews.includes(view) && !getStoredToken()) {
+      setCurrentView('signin');
+      addToast('Please sign in to access your business console.', 'info');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
     setCurrentView(view);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const handleSignOut = async () => {
+    try {
+      await api.auth.logout();
+    } catch {}
+    removeStoredToken();
+    addToast('Signed out of business console.', 'info');
+    handleNavigate('home');
+  };
+
+  React.useEffect(() => {
+    // Global 401 unauthorized listener
+    const handleUnauthorized = (e: any) => {
+      removeStoredToken();
+      setCurrentView('signin');
+      addToast(e.detail?.message || 'Authentication required. Please sign in.', 'warning');
+    };
+    window.addEventListener('reviewflow:unauthorized', handleUnauthorized);
+
+    // Initial session verification if token is present
+    const token = getStoredToken();
+    if (token) {
+      api.auth.getMe()
+        .then((res) => {
+          if (res.data?.businesses && res.data.businesses.length > 0) {
+            const biz = res.data.businesses[0];
+            setBusinessProfile({
+              name: biz.name || 'Muzaffarabad azad jamu and kashmir',
+              address: biz.address || '9F4G+2Q8, Domail Muzaffarabad',
+              category: biz.category || 'Other'
+            });
+          }
+        })
+        .catch(() => {
+          removeStoredToken();
+        });
+    }
+
+    if (typeof window !== 'undefined') {
+      if (window.location.pathname.startsWith('/r/')) {
+        const slug = window.location.pathname.replace('/r/', '').trim();
+        if (slug) {
+          setFunnelSlug(slug);
+          setCurrentView('funnel');
+        }
+      } else if (window.location.pathname.startsWith('/admin')) {
+        if (!getStoredToken()) {
+          setCurrentView('signin');
+          addToast('Please sign in to access the Admin Console.', 'info');
+        } else {
+          setCurrentView('admin');
+        }
+      }
+    }
+
+    return () => {
+      window.removeEventListener('reviewflow:unauthorized', handleUnauthorized);
+    };
+  }, []);
 
   const handleScrollToDemo = () => {
     if (currentView !== 'home') {
@@ -79,8 +151,8 @@ export default function App() {
       {/* Toast Notification Container */}
       <Toast toasts={toasts} onDismiss={removeToast} />
 
-      {/* Navigation Header (Hidden on dedicated Business Dashboard, Analytics, Negative Reviews, Review Settings, Physical Stands & Services) */}
-      {currentView !== 'dashboard' && currentView !== 'analytics' && currentView !== 'feedback' && currentView !== 'settings' && currentView !== 'stand' && currentView !== 'services' && (
+      {/* Navigation Header (Hidden on dedicated Business Dashboard, Analytics, Negative Reviews, Review Settings, Physical Stands, Services, Billing, Account, Public Funnel & Admin Portal) */}
+      {currentView !== 'dashboard' && currentView !== 'analytics' && currentView !== 'feedback' && currentView !== 'settings' && currentView !== 'stand' && currentView !== 'services' && currentView !== 'billing' && currentView !== 'account' && currentView !== 'funnel' && currentView !== 'admin' && (
         <Header
           currentView={currentView}
           onNavigate={handleNavigate}
@@ -248,10 +320,7 @@ export default function App() {
             businessCategory={businessProfile.category}
             initialTab="dashboard"
             onNavigate={handleNavigate}
-            onSignOut={() => {
-              addToast('Signed out of business console.', 'info');
-              handleNavigate('home');
-            }}
+            onSignOut={handleSignOut}
             onNotify={addToast}
           />
         )}
@@ -263,10 +332,7 @@ export default function App() {
             businessCategory={businessProfile.category}
             initialTab="analytics"
             onNavigate={handleNavigate}
-            onSignOut={() => {
-              addToast('Signed out of business console.', 'info');
-              handleNavigate('home');
-            }}
+            onSignOut={handleSignOut}
             onNotify={addToast}
           />
         )}
@@ -278,10 +344,7 @@ export default function App() {
             businessCategory={businessProfile.category}
             initialTab="feedback"
             onNavigate={handleNavigate}
-            onSignOut={() => {
-              addToast('Signed out of business console.', 'info');
-              handleNavigate('home');
-            }}
+            onSignOut={handleSignOut}
             onNotify={addToast}
           />
         )}
@@ -293,10 +356,7 @@ export default function App() {
             businessCategory={businessProfile.category}
             initialTab="settings"
             onNavigate={handleNavigate}
-            onSignOut={() => {
-              addToast('Signed out of business console.', 'info');
-              handleNavigate('home');
-            }}
+            onSignOut={handleSignOut}
             onNotify={addToast}
           />
         )}
@@ -308,10 +368,7 @@ export default function App() {
             businessCategory={businessProfile.category}
             initialTab="stand"
             onNavigate={handleNavigate}
-            onSignOut={() => {
-              addToast('Signed out of business console.', 'info');
-              handleNavigate('home');
-            }}
+            onSignOut={handleSignOut}
             onNotify={addToast}
           />
         )}
@@ -323,17 +380,50 @@ export default function App() {
             businessCategory={businessProfile.category}
             initialTab="services"
             onNavigate={handleNavigate}
-            onSignOut={() => {
-              addToast('Signed out of business console.', 'info');
-              handleNavigate('home');
-            }}
+            onSignOut={handleSignOut}
+            onNotify={addToast}
+          />
+        )}
+
+        {currentView === 'billing' && (
+          <BusinessDashboard
+            businessName={businessProfile.name}
+            businessAddress={businessProfile.address}
+            businessCategory={businessProfile.category}
+            initialTab="billing"
+            onNavigate={handleNavigate}
+            onSignOut={handleSignOut}
+            onNotify={addToast}
+          />
+        )}
+
+        {currentView === 'account' && (
+          <BusinessDashboard
+            businessName={businessProfile.name}
+            businessAddress={businessProfile.address}
+            businessCategory={businessProfile.category}
+            initialTab="account"
+            onNavigate={handleNavigate}
+            onSignOut={handleSignOut}
+            onNotify={addToast}
+          />
+        )}
+        {currentView === 'funnel' && (
+          <PublicFunnelView
+            slug={funnelSlug}
+            onBackToHome={() => handleNavigate('home')}
+          />
+        )}
+        {currentView === 'admin' && (
+          <AdminPortalView
+            onBackToDashboard={() => handleNavigate('dashboard')}
             onNotify={addToast}
           />
         )}
       </main>
 
-      {/* Footer (Hidden on dedicated full-screen signin, register, onboarding, dashboard, analytics, feedback, settings, stand, and services views) */}
-      {currentView !== 'signin' && currentView !== 'register' && currentView !== 'onboarding' && currentView !== 'dashboard' && currentView !== 'analytics' && currentView !== 'feedback' && currentView !== 'settings' && currentView !== 'stand' && currentView !== 'services' && (
+      {/* Footer (Hidden on dedicated full-screen signin, register, onboarding, dashboard, analytics, feedback, settings, stand, services, billing, account, funnel, and admin views) */}
+      {currentView !== 'signin' && currentView !== 'register' && currentView !== 'onboarding' && currentView !== 'dashboard' && currentView !== 'analytics' && currentView !== 'feedback' && currentView !== 'settings' && currentView !== 'stand' && currentView !== 'services' && currentView !== 'billing' && currentView !== 'account' && currentView !== 'funnel' && currentView !== 'admin' && (
         <Footer onNavigate={handleNavigate} onOpenAuth={handleOpenAuth} />
       )}
 

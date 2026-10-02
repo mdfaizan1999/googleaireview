@@ -126,6 +126,14 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, onOpenA
           {/* Desktop CTAs */}
           <div className="hidden sm:flex items-center gap-2.5">
             <button
+              onClick={() => handleNavClick('dashboard')}
+              className="px-3.5 py-2 text-xs font-extrabold text-emerald-800 bg-emerald-50 border border-emerald-200 rounded-lg hover:bg-emerald-100 transition-all cursor-pointer shadow-xs flex items-center gap-1.5"
+              title="Open Business Owner / Admin Console"
+            >
+              <i className="fa-solid fa-shield-halved text-emerald-600"></i>
+              <span>Admin Console</span>
+            </button>
+            <button
               onClick={() => handleNavClick('signin')}
               className="px-3.5 py-2 text-xs font-bold text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-all cursor-pointer shadow-sm"
             >
@@ -272,6 +280,13 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, onOpenA
         </div>
 
         <div className="pt-6 border-t border-slate-100 space-y-2.5">
+          <button
+            onClick={() => handleNavClick('dashboard')}
+            className="w-full py-2.5 text-sm font-extrabold text-emerald-800 bg-emerald-50 border border-emerald-200 rounded-xl shadow-xs flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <i className="fa-solid fa-shield-halved text-emerald-600"></i>
+            <span>Admin Console (harsh)</span>
+          </button>
           <button
             onClick={() => handleNavClick('register')}
             className="w-full py-2.5 text-sm font-bold text-white bg-gradient-to-r from-[#34A853] to-[#2D9248] rounded-xl shadow-md flex items-center justify-center gap-2 cursor-pointer"

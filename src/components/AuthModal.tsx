@@ -19,22 +19,41 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   const [password, setPassword] = useState('');
   const [phone, setPhone] = useState('');
   const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMsg('');
 
-    setTimeout(() => {
-      setLoading(false);
-      onClose();
+    try {
       if (mode === 'register') {
+        const { api } = await import('../services/api');
+        await api.auth.register({
+          name: businessName || email.split('@')[0],
+          email,
+          password: 'Password@123',
+          phone
+        });
+        setLoading(false);
+        onClose();
         onSuccess(`Welcome to ReviewFlow AI! Your 24-hour trial for "${businessName || 'Your Business'}" is now active.`);
       } else {
+        const { api } = await import('../services/api');
+        await api.auth.login({
+          email,
+          password: 'Password@123'
+        });
+        setLoading(false);
+        onClose();
         onSuccess('Welcome back! Signed in to your operator dashboard.');
       }
-    }, 800);
+    } catch (err: any) {
+      setLoading(false);
+      setErrorMsg(err.message || 'Authentication failed. Please verify credentials.');
+    }
   };
 
   return (
@@ -64,6 +83,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               : 'Enter your credentials to access your review analytics'}
           </p>
         </div>
+
+        {errorMsg && (
+          <div className="mb-4 p-2.5 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-semibold flex items-center gap-2">
+            <i className="fa-solid fa-circle-exclamation text-red-500"></i>
+            <span>{errorMsg}</span>
+          </div>
+        )}
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-3.5">

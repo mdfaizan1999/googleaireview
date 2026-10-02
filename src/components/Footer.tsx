@@ -133,6 +133,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAuth }) => {
               </button>
             </li>
             <li>
+              <button onClick={() => onNavigate('admin')} className="hover:text-amber-400 transition-colors cursor-pointer flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                <span>Admin Operations</span>
+              </button>
+            </li>
+            <li>
               <button onClick={() => onNavigate('onboarding')} className="hover:text-white transition-colors cursor-pointer">
                 Business Onboard
               </button>

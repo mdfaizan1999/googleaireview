@@ -15,7 +15,11 @@ export type ViewType =
   | 'feedback'
   | 'settings'
   | 'stand'
-  | 'services';
+  | 'services'
+  | 'billing'
+  | 'account'
+  | 'funnel'
+  | 'admin';
 
 export interface ToastMessage {
   id: string;

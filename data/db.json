@@ -1,0 +1,5253 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_001",
+      "name": "ReviewFlow Admin",
+      "email": "admin@reviewflowai.in",
+      "password_hash": "$2b$10$Ir6FgMKHBi4QwuYR.uSjlOULTk6XptHmR4mvDtn9wHsxZKQ2iljdW",
+      "phone": "+91 9707842047",
+      "role": "admin",
+      "status": "active",
+      "email_verified_at": "2026-10-01T20:02:14.821Z",
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-02T11:02:53.861Z",
+      "last_login_at": "2026-10-02T11:02:53.861Z"
+    },
+    {
+      "id": "usr_demo_002",
+      "name": "harsh",
+      "email": "ahmadfaizan1999@gmail.com",
+      "password_hash": "$2b$10$Ir6FgMKHBi4QwuYR.uSjlOR5fejQQQnzuyDWIVSzeYrgH6tGOu9vy",
+      "phone": "+91 8877307350",
+      "role": "user",
+      "status": "active",
+      "email_verified_at": "2026-10-01T20:02:14.821Z",
+      "last_login_at": "2026-10-02T11:02:53.628Z",
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-02T11:02:53.628Z"
+    },
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password_hash": "$2b$10$8D0yVhX3TwHZIVpUq47uj.e8/KrozWyAnBPrQvN4IrN.7lEPqWHI.",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790884962355_4ug9x",
+      "created_at": "2026-10-01T20:02:42.355Z",
+      "updated_at": "2026-10-01T20:02:42.355Z"
+    },
+    {
+      "name": "User A",
+      "email": "usera_1790885516719@example.com",
+      "password_hash": "$2b$10$.xROqTGslOkxvu..1IJ5qeQPR.d1jaH4T.Jl3l4H2RkZuLmZA74wa",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790885516937_696c6",
+      "created_at": "2026-10-01T20:11:56.937Z",
+      "updated_at": "2026-10-01T20:11:56.937Z"
+    },
+    {
+      "name": "User B",
+      "email": "userb_1790885516719@example.com",
+      "password_hash": "$2b$10$4maPM0eNyn3qsTANMcsWa.wvnrKC6yZj9pjBWPxod/d59BbY0HIGC",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790885517055_z3svm",
+      "created_at": "2026-10-01T20:11:57.055Z",
+      "updated_at": "2026-10-01T20:11:57.055Z"
+    },
+    {
+      "name": "User A",
+      "email": "usera_1790885529197@example.com",
+      "password_hash": "$2b$10$q/QtBNVZHF7qUfIqv3GMP./WyfvTcmWrJ0mo1g0nS2eALCXb7.NEO",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790885529416_bpke0",
+      "created_at": "2026-10-01T20:12:09.416Z",
+      "updated_at": "2026-10-01T20:12:09.416Z"
+    },
+    {
+      "name": "User B",
+      "email": "userb_1790885529197@example.com",
+      "password_hash": "$2b$10$M8gKsWQ04NGHYOY/S9jViOkVYsAzXWn0xP1PYcDH5Vs4KQg7zoMce",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790885529532_94q3f",
+      "created_at": "2026-10-01T20:12:09.532Z",
+      "updated_at": "2026-10-01T20:12:09.532Z"
+    },
+    {
+      "name": "User A",
+      "email": "usera_1790886214265@example.com",
+      "password_hash": "$2b$10$7PUlTEJXQ3J77FLx5nJ1dunUA8a1s1KpScCxohSq5nLtU4hqKmALq",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790886214453_r9v1j",
+      "created_at": "2026-10-01T20:23:34.453Z",
+      "updated_at": "2026-10-01T20:23:34.453Z"
+    },
+    {
+      "name": "User B",
+      "email": "userb_1790886214265@example.com",
+      "password_hash": "$2b$10$32/SQgaodVFwlgtuvyhwnOdKBkCAuSRkgouoLd8hixAh1MG6m89SK",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790886214566_imile",
+      "created_at": "2026-10-01T20:23:34.566Z",
+      "updated_at": "2026-10-01T20:23:34.566Z"
+    },
+    {
+      "name": "Analytics Owner A",
+      "email": "analytics_a_1790886375097@example.com",
+      "password_hash": "$2b$10$bLQ0HaCvD/HtpbEzykgnp..e5LWcqmyoOEZNb9GrNuCUomZs9lZOy",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790886375283_swz94",
+      "created_at": "2026-10-01T20:26:15.283Z",
+      "updated_at": "2026-10-01T20:26:15.283Z"
+    },
+    {
+      "name": "Analytics Owner B",
+      "email": "analytics_b_1790886375097@example.com",
+      "password_hash": "$2b$10$Hs.Hs2LSZ0wiy0ZNO44/BuWE5Agq7oiAAh/mXToyJTcSQ5ODNkPG6",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790886375394_rl4c9",
+      "created_at": "2026-10-01T20:26:15.394Z",
+      "updated_at": "2026-10-01T20:26:15.394Z"
+    },
+    {
+      "name": "Analytics Owner A",
+      "email": "analytics_a_1790886390761@example.com",
+      "password_hash": "$2b$10$LBAM/8TfuGak3U.B9KHAQu1nwC9HnDB.k3jK4PfgBqbSewL/GMXDi",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790886390953_q1ll1",
+      "created_at": "2026-10-01T20:26:30.953Z",
+      "updated_at": "2026-10-01T20:26:30.953Z"
+    },
+    {
+      "name": "Analytics Owner B",
+      "email": "analytics_b_1790886390761@example.com",
+      "password_hash": "$2b$10$agEc4SsKvxxw9c8Ha5Xxie6raD.EPhT1QBd0jxCRUZqr58GR0rIEi",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790886391066_69p0f",
+      "created_at": "2026-10-01T20:26:31.066Z",
+      "updated_at": "2026-10-01T20:26:31.066Z"
+    },
+    {
+      "name": "Analytics Owner A",
+      "email": "analytics_a_1790886408988@example.com",
+      "password_hash": "$2b$10$SlP1PUuSuMt3mlLg7HugJuEgBvFDftY9PJQ3uFbXALB70QTMna5lS",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790886409227_1z2mu",
+      "created_at": "2026-10-01T20:26:49.227Z",
+      "updated_at": "2026-10-01T20:26:49.227Z"
+    },
+    {
+      "name": "Analytics Owner B",
+      "email": "analytics_b_1790886408988@example.com",
+      "password_hash": "$2b$10$giCGDnE.K/5X6x2yAyT5Te.IoKBTTln.AxuuGbDf/bvvjoNHsHWRS",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790886409352_lyz3j",
+      "created_at": "2026-10-01T20:26:49.352Z",
+      "updated_at": "2026-10-01T20:26:49.352Z"
+    },
+    {
+      "name": "Google Owner A",
+      "email": "google_tenant_a_1790933504985@example.com",
+      "password_hash": "$2b$10$GCYot0mKRKmeM0TlIISWhuu.UtmIPqL8kZO9c6MwqOaY6.s6vzUXC",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933505207_yfxrk",
+      "created_at": "2026-10-02T09:31:45.207Z",
+      "updated_at": "2026-10-02T09:31:45.207Z"
+    },
+    {
+      "name": "Google Owner B",
+      "email": "google_tenant_b_1790933504985@example.com",
+      "password_hash": "$2b$10$xkDd12Bwbb.UvVcyopA7MehA9O4nTKPn6DRXdnRhHGPGyaEwb2SzW",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933505324_xamkx",
+      "created_at": "2026-10-02T09:31:45.324Z",
+      "updated_at": "2026-10-02T09:31:45.324Z"
+    },
+    {
+      "name": "User A",
+      "email": "usera_1790933510800@example.com",
+      "password_hash": "$2b$10$p.beIXYvA2sWKjgfe4LJUO1rJJxyO9TtWffAk9NGM/KJK7EgJcCIK",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933510991_q9qmb",
+      "created_at": "2026-10-02T09:31:50.991Z",
+      "updated_at": "2026-10-02T09:31:50.991Z"
+    },
+    {
+      "name": "User B",
+      "email": "userb_1790933510800@example.com",
+      "password_hash": "$2b$10$oDLCel0m.B9QACa6M0erDO0iEZj9ZktgWJ8OF5k02gE1IbVMqD09m",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933511105_y7roa",
+      "created_at": "2026-10-02T09:31:51.105Z",
+      "updated_at": "2026-10-02T09:31:51.105Z"
+    },
+    {
+      "name": "Analytics Owner A",
+      "email": "analytics_a_1790933514577@example.com",
+      "password_hash": "$2b$10$2nV/SLpRjfRB04E2tvviq.hqWY/nqQqZXBp98xcDffFFJiSAnIIw6",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933514762_rj0ot",
+      "created_at": "2026-10-02T09:31:54.762Z",
+      "updated_at": "2026-10-02T09:31:54.762Z"
+    },
+    {
+      "name": "Analytics Owner B",
+      "email": "analytics_b_1790933514577@example.com",
+      "password_hash": "$2b$10$QkhOLLvs.hqdL5v4R5yTAuTFJMVQ97uzOeRvpg6lEwoX1lIUyC26m",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933514875_1aivu",
+      "created_at": "2026-10-02T09:31:54.875Z",
+      "updated_at": "2026-10-02T09:31:54.875Z"
+    },
+    {
+      "name": "User A",
+      "email": "usera_1790933530146@example.com",
+      "password_hash": "$2b$10$w3h6/tBs4jGS6bnfhl/3ButjK5tgLGSWO6Kj8tDW1tMDDUraZ5E8i",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933530332_faffh",
+      "created_at": "2026-10-02T09:32:10.332Z",
+      "updated_at": "2026-10-02T09:32:10.332Z"
+    },
+    {
+      "name": "User B",
+      "email": "userb_1790933530146@example.com",
+      "password_hash": "$2b$10$RBoiaS7rvShJXDjDKNtHw.TLSgZCCMRq4BMb6HRnJNyqrBrmm3.Y.",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933530446_rx3hz",
+      "created_at": "2026-10-02T09:32:10.446Z",
+      "updated_at": "2026-10-02T09:32:10.446Z"
+    },
+    {
+      "name": "Analytics Owner A",
+      "email": "analytics_a_1790933531550@example.com",
+      "password_hash": "$2b$10$JSIRwvlyewCpKIMXLV4C/OneUTDmSmsKa5RutDwgkSDW2.fOkHYj6",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933531738_ntasp",
+      "created_at": "2026-10-02T09:32:11.738Z",
+      "updated_at": "2026-10-02T09:32:11.738Z"
+    },
+    {
+      "name": "Analytics Owner B",
+      "email": "analytics_b_1790933531550@example.com",
+      "password_hash": "$2b$10$cyXgT1A0cBLqgaJChptdPuJHc6JsfeyRn8eZTap7QHfu.n7mzhhk2",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933531850_estsc",
+      "created_at": "2026-10-02T09:32:11.850Z",
+      "updated_at": "2026-10-02T09:32:11.850Z"
+    },
+    {
+      "name": "Google Owner A",
+      "email": "google_tenant_a_1790933532949@example.com",
+      "password_hash": "$2b$10$nxbyhmg97XEDB26hRecm/O4Xoh/OTE3zBKT4qulLrQQ95lhRZYK7G",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933533140_lagov",
+      "created_at": "2026-10-02T09:32:13.140Z",
+      "updated_at": "2026-10-02T09:32:13.140Z"
+    },
+    {
+      "name": "Google Owner B",
+      "email": "google_tenant_b_1790933532949@example.com",
+      "password_hash": "$2b$10$tsu44U.0QThehBpvoSFd7.52X1UPVccl2kNvLZxF7zgU8Yk6wgidW",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933533260_2pew0",
+      "created_at": "2026-10-02T09:32:13.260Z",
+      "updated_at": "2026-10-02T09:32:13.260Z"
+    },
+    {
+      "name": "Google Owner A",
+      "email": "google_tenant_a_1790933783902@example.com",
+      "password_hash": "$2b$10$vHaP3Wo/rZSxZZeG6I7x7.oV8NINf9qVWlXc3DM.T6mtHwP0fX3z6",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933784121_q8m26",
+      "created_at": "2026-10-02T09:36:24.121Z",
+      "updated_at": "2026-10-02T09:36:24.121Z"
+    },
+    {
+      "name": "Google Owner B",
+      "email": "google_tenant_b_1790933783902@example.com",
+      "password_hash": "$2b$10$RnPgWH/szvo569ULzi19bOdqSp0naR1nx0HdMGKMmjmNknmw.Qt4a",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790933784271_8211y",
+      "created_at": "2026-10-02T09:36:24.271Z",
+      "updated_at": "2026-10-02T09:36:24.271Z"
+    },
+    {
+      "name": "Clinic Owner A",
+      "email": "ai_tenant_a_1790934348546@example.com",
+      "password_hash": "$2b$10$Lzr.S489wTdKVj400V40.OQo3R7LhO4u2ZOqOIodHPbGXBW1G.RE.",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790934348775_8ouin",
+      "created_at": "2026-10-02T09:45:48.775Z",
+      "updated_at": "2026-10-02T09:45:48.775Z"
+    },
+    {
+      "name": "Rival Owner B",
+      "email": "ai_tenant_b_1790934348546@example.com",
+      "password_hash": "$2b$10$CwCDfHKQJnkLduZh7uLgB.cTyx4r8UDVOaANA7/.ELnAV/FyXA8hq",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790934348895_vcjar",
+      "created_at": "2026-10-02T09:45:48.895Z",
+      "updated_at": "2026-10-02T09:45:48.895Z"
+    },
+    {
+      "name": "Clinic Owner A",
+      "email": "ai_tenant_a_1790934371119@example.com",
+      "password_hash": "$2b$10$ci0TA77LfU7RIFbtgGMQuefQihEyrAkErOKQxS45VV2kGrAEu0fYK",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790934371311_wavpj",
+      "created_at": "2026-10-02T09:46:11.311Z",
+      "updated_at": "2026-10-02T09:46:11.311Z"
+    },
+    {
+      "name": "Rival Owner B",
+      "email": "ai_tenant_b_1790934371119@example.com",
+      "password_hash": "$2b$10$dbR8kR.fIcE3pPAXvchpU.USj6lgFBWB5PEZeYsC7P9o7iNR1Pv5K",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790934371431_njhlz",
+      "created_at": "2026-10-02T09:46:11.431Z",
+      "updated_at": "2026-10-02T09:46:11.431Z"
+    },
+    {
+      "name": "Clinic Owner A",
+      "email": "ai_tenant_a_1790934396661@example.com",
+      "password_hash": "$2b$10$q9/sH92LNlA4K9qVjQTRWO2ouAhhWHq30e3IivsyCNkrxWQSkeJM.",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790934396855_ojn51",
+      "created_at": "2026-10-02T09:46:36.855Z",
+      "updated_at": "2026-10-02T09:46:36.855Z"
+    },
+    {
+      "name": "Rival Owner B",
+      "email": "ai_tenant_b_1790934396661@example.com",
+      "password_hash": "$2b$10$8VUsiaZiWR.xzvxH95uTVudenJr3xNbkfV9eSr0uv6M2BBP5/GDru",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790934396970_u46ox",
+      "created_at": "2026-10-02T09:46:36.970Z",
+      "updated_at": "2026-10-02T09:46:36.970Z"
+    },
+    {
+      "name": "Clinic Owner A",
+      "email": "ai_tenant_a_1790934410535@example.com",
+      "password_hash": "$2b$10$3euBn20dTU8okBxqUiJuC.xSNSoUZDZUJtH0g53HyqvjSYi70lSEa",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790934410752_1wytn",
+      "created_at": "2026-10-02T09:46:50.752Z",
+      "updated_at": "2026-10-02T09:46:50.752Z"
+    },
+    {
+      "name": "Rival Owner B",
+      "email": "ai_tenant_b_1790934410535@example.com",
+      "password_hash": "$2b$10$/GqjKIZ3r1Ksvfx7Sbhr7OXeApt9sZPw.gvkuZgqh3Bm3uxiylPsW",
+      "phone": "",
+      "role": "user",
+      "status": "active",
+      "id": "usr_1790934410875_3yawo",
+      "created_at": "2026-10-02T09:46:50.875Z",
+      "updated_at": "2026-10-02T09:46:50.875Z"
+    }
+  ],
+  "businesses": [
+    {
+      "id": "biz_001",
+      "user_id": "usr_demo_002",
+      "name": "Muzaffarabad azad jamu and kashmir",
+      "slug": "muzaffarabad-ajk",
+      "category": "Healthcare & Dental",
+      "description": "Comprehensive family healthcare, diagnostic center and pharmacy clinic.",
+      "phone": "+91 8877307350",
+      "email": "contact@muzaffarabadhealth.com",
+      "address": "9F4G+2Q8, Domail Muzaffarabad",
+      "city": "Muzaffarabad",
+      "state": "Azad Jammu and Kashmir",
+      "country": "Pakistan",
+      "postal_code": "13100",
+      "timezone": "Asia/Karachi",
+      "status": "active",
+      "google_review_url": "https://g.page/r/CbX7-reviewflow/review",
+      "min_star_threshold": 4,
+      "custom_keywords": [
+        "Dr. Sharma",
+        "Root Canal",
+        "Gentle Care",
+        "Fast Appointment",
+        "Clean Clinic"
+      ],
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-01T20:02:14.821Z"
+    },
+    {
+      "user_id": "usr_1790885516937_696c6",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-7065",
+      "category": "Restaurant & Hospitality",
+      "address": "100 Beach Road",
+      "phone": "+91 9876543210",
+      "email": "",
+      "website": "https://sunrisecafe.example.com",
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790885517065_1s8pl",
+      "created_at": "2026-10-01T20:11:57.065Z",
+      "updated_at": "2026-10-01T20:11:57.065Z"
+    },
+    {
+      "user_id": "usr_1790885516937_696c6",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-7082",
+      "category": "General Business",
+      "address": "200 Mountain Way",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790885517082_upzna",
+      "created_at": "2026-10-01T20:11:57.082Z",
+      "updated_at": "2026-10-01T20:11:57.082Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe",
+      "category": "Restaurant & Hospitality",
+      "description": "",
+      "phone": "+91 9876543210",
+      "email": "",
+      "website": "https://sunrisecafe.example.com",
+      "logo": "",
+      "address": "100 Beach Road",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790885529543_kq4bo",
+      "created_at": "2026-10-01T20:12:09.543Z",
+      "updated_at": "2026-10-01T20:12:09.543Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-2",
+      "category": "General Business",
+      "description": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "200 Mountain Way",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790885529559_9ec3a",
+      "created_at": "2026-10-01T20:12:09.559Z",
+      "updated_at": "2026-10-01T20:12:09.559Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-3",
+      "category": "Restaurant & Hospitality",
+      "description": "",
+      "phone": "+91 9876543210",
+      "email": "",
+      "website": "https://sunrisecafe.example.com",
+      "logo": "",
+      "address": "100 Beach Road",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790886214576_p9xrs",
+      "created_at": "2026-10-01T20:23:34.576Z",
+      "updated_at": "2026-10-01T20:23:34.576Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-4",
+      "category": "General Business",
+      "description": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "200 Mountain Way",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790886214592_64hkn",
+      "created_at": "2026-10-01T20:23:34.592Z",
+      "updated_at": "2026-10-01T20:23:34.592Z"
+    },
+    {
+      "user_id": "usr_1790886375283_swz94",
+      "name": "The Grand Analytics Bistro",
+      "slug": "the-grand-analytics-bistro",
+      "category": "Restaurant",
+      "description": "",
+      "phone": "+91 9998887776",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790886375402_huku9",
+      "created_at": "2026-10-01T20:26:15.402Z",
+      "updated_at": "2026-10-01T20:26:15.402Z"
+    },
+    {
+      "user_id": "usr_1790886390953_q1ll1",
+      "name": "The Grand Analytics Bistro",
+      "slug": "the-grand-analytics-bistro-2",
+      "category": "Restaurant",
+      "description": "",
+      "phone": "+91 9998887776",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790886391076_gbh5w",
+      "created_at": "2026-10-01T20:26:31.076Z",
+      "updated_at": "2026-10-01T20:26:31.076Z"
+    },
+    {
+      "user_id": "usr_1790886409227_1z2mu",
+      "name": "The Grand Analytics Bistro",
+      "slug": "the-grand-analytics-bistro-3",
+      "category": "Restaurant",
+      "description": "",
+      "phone": "+91 9998887776",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790886409361_6ei1h",
+      "created_at": "2026-10-01T20:26:49.361Z",
+      "updated_at": "2026-10-01T20:26:49.361Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "name": "Apex Health Clinic",
+      "slug": "apex-health-clinic",
+      "category": "General Business",
+      "description": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "101 Health Boulevard, Sector 12",
+      "city": "Chandigarh",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933505335_c7f7i",
+      "created_at": "2026-10-02T09:31:45.335Z",
+      "updated_at": "2026-10-02T09:31:45.335Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-5",
+      "category": "Restaurant & Hospitality",
+      "description": "",
+      "phone": "+91 9876543210",
+      "email": "",
+      "website": "https://sunrisecafe.example.com",
+      "logo": "",
+      "address": "100 Beach Road",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933511115_wr08y",
+      "created_at": "2026-10-02T09:31:51.115Z",
+      "updated_at": "2026-10-02T09:31:51.115Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-6",
+      "category": "General Business",
+      "description": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "200 Mountain Way",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933511132_tfb2w",
+      "created_at": "2026-10-02T09:31:51.132Z",
+      "updated_at": "2026-10-02T09:31:51.132Z"
+    },
+    {
+      "user_id": "usr_1790933514762_rj0ot",
+      "name": "The Grand Analytics Bistro",
+      "slug": "the-grand-analytics-bistro-4",
+      "category": "Restaurant",
+      "description": "",
+      "phone": "+91 9998887776",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933514884_urcrf",
+      "created_at": "2026-10-02T09:31:54.884Z",
+      "updated_at": "2026-10-02T09:31:54.884Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-7",
+      "category": "Restaurant & Hospitality",
+      "description": "",
+      "phone": "+91 9876543210",
+      "email": "",
+      "website": "https://sunrisecafe.example.com",
+      "logo": "",
+      "address": "100 Beach Road",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933530453_vpqq9",
+      "created_at": "2026-10-02T09:32:10.453Z",
+      "updated_at": "2026-10-02T09:32:10.453Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "name": "Sunrise Cafe",
+      "slug": "sunrise-cafe-8",
+      "category": "General Business",
+      "description": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "200 Mountain Way",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933530470_yyfex",
+      "created_at": "2026-10-02T09:32:10.470Z",
+      "updated_at": "2026-10-02T09:32:10.470Z"
+    },
+    {
+      "user_id": "usr_1790933531738_ntasp",
+      "name": "The Grand Analytics Bistro",
+      "slug": "the-grand-analytics-bistro-5",
+      "category": "Restaurant",
+      "description": "",
+      "phone": "+91 9998887776",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933531859_p1tll",
+      "created_at": "2026-10-02T09:32:11.859Z",
+      "updated_at": "2026-10-02T09:32:11.859Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "name": "Apex Health Clinic",
+      "slug": "apex-health-clinic-2",
+      "category": "General Business",
+      "description": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "101 Health Boulevard, Sector 12",
+      "city": "Chandigarh",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933533268_iyhd2",
+      "created_at": "2026-10-02T09:32:13.268Z",
+      "updated_at": "2026-10-02T09:32:13.268Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "name": "Apex Health Clinic",
+      "slug": "apex-health-clinic-3",
+      "category": "General Business",
+      "description": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "101 Health Boulevard, Sector 12",
+      "city": "Chandigarh",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790933784290_jb5zh",
+      "created_at": "2026-10-02T09:36:24.290Z",
+      "updated_at": "2026-10-02T09:36:24.290Z"
+    },
+    {
+      "user_id": "usr_1790934348775_8ouin",
+      "name": "Metro Dental & Diagnostics",
+      "slug": "metro-dental-diagnostics",
+      "category": "Dental & Healthcare",
+      "description": "Advanced family dentistry, dental implants and pediatric dental care.",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "100 Medical Center Blvd",
+      "city": "New Delhi",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790934348904_rnm0o",
+      "created_at": "2026-10-02T09:45:48.904Z",
+      "updated_at": "2026-10-02T09:45:48.904Z"
+    },
+    {
+      "user_id": "usr_1790934371311_wavpj",
+      "name": "Metro Dental & Diagnostics",
+      "slug": "metro-dental-diagnostics-2",
+      "category": "Dental & Healthcare",
+      "description": "Advanced family dentistry, dental implants and pediatric dental care.",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "100 Medical Center Blvd",
+      "city": "New Delhi",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790934371441_ueshd",
+      "created_at": "2026-10-02T09:46:11.441Z",
+      "updated_at": "2026-10-02T09:46:11.441Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "name": "Metro Dental & Diagnostics",
+      "slug": "metro-dental-diagnostics-3",
+      "category": "Dental & Healthcare",
+      "description": "Advanced family dentistry, dental implants and pediatric dental care.",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "100 Medical Center Blvd",
+      "city": "New Delhi",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790934396979_ql1lf",
+      "created_at": "2026-10-02T09:46:36.979Z",
+      "updated_at": "2026-10-02T09:46:36.979Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "name": "Metro Dental & Diagnostics",
+      "slug": "metro-dental-diagnostics-4",
+      "category": "Dental & Healthcare",
+      "description": "Advanced family dentistry, dental implants and pediatric dental care.",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "logo": "",
+      "address": "100 Medical Center Blvd",
+      "city": "New Delhi",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "timezone": "UTC",
+      "google_review_url": "",
+      "min_star_threshold": 4,
+      "custom_keywords": [],
+      "status": "active",
+      "id": "biz_1790934410885_l7mp1",
+      "created_at": "2026-10-02T09:46:50.885Z",
+      "updated_at": "2026-10-02T09:46:50.885Z"
+    }
+  ],
+  "google_connections": [
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "provider": "google",
+      "google_account_id": "accounts/10987654321",
+      "google_email": "ahmadfaizan1999@gmail.com",
+      "access_token": "",
+      "refresh_token": "",
+      "token_expires_at": "2026-10-02T10:31:45.359Z",
+      "scopes": [
+        "https://www.googleapis.com/auth/business.manage",
+        "openid",
+        "email",
+        "profile"
+      ],
+      "status": "disconnected",
+      "connected_at": "2026-10-02T09:31:45.359Z",
+      "id": "gconn_1790933505360_dgzf",
+      "created_at": "2026-10-02T09:31:45.360Z",
+      "updated_at": "2026-10-02T09:31:46.653Z",
+      "disconnected_at": "2026-10-02T09:31:46.653Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "provider": "google",
+      "google_account_id": "accounts/10987654321",
+      "google_email": "ahmadfaizan1999@gmail.com",
+      "access_token": "",
+      "refresh_token": "",
+      "token_expires_at": "2026-10-02T10:32:13.308Z",
+      "scopes": [
+        "https://www.googleapis.com/auth/business.manage",
+        "openid",
+        "email",
+        "profile"
+      ],
+      "status": "disconnected",
+      "connected_at": "2026-10-02T09:32:13.308Z",
+      "id": "gconn_1790933533308_n22k",
+      "created_at": "2026-10-02T09:32:13.308Z",
+      "updated_at": "2026-10-02T09:32:14.611Z",
+      "disconnected_at": "2026-10-02T09:32:14.611Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "provider": "google",
+      "google_account_id": "accounts/10987654321",
+      "google_email": "ahmadfaizan1999@gmail.com",
+      "access_token": "",
+      "refresh_token": "",
+      "token_expires_at": "2026-10-02T10:36:24.318Z",
+      "scopes": [
+        "https://www.googleapis.com/auth/business.manage",
+        "openid",
+        "email",
+        "profile"
+      ],
+      "status": "disconnected",
+      "connected_at": "2026-10-02T09:36:24.318Z",
+      "id": "gconn_1790933784318_n72y",
+      "created_at": "2026-10-02T09:36:24.318Z",
+      "updated_at": "2026-10-02T09:36:25.608Z",
+      "disconnected_at": "2026-10-02T09:36:25.608Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "provider": "google",
+      "google_account_id": "accounts/10987654321",
+      "google_email": "ahmadfaizan1999@gmail.com",
+      "access_token": "a2aadc541cfd691adcabf96a:b95047280d52b9441ebcd87e435b8ebf:4896e349937026d3ea5eb38603c316426d1cf422bf535cc8d97abed910f992bc5f39723792051a90b5",
+      "refresh_token": "4f0825a055f2675a8dac1d9a:b371b5a247a496a6eaf1208d00897759:539db26cfe70e65a03df7b3e13bf35e238ab39b3d154a9c8c94973bb5e249053",
+      "token_expires_at": "2026-10-02T11:44:08.068Z",
+      "scopes": [
+        "https://www.googleapis.com/auth/business.manage",
+        "openid",
+        "email",
+        "profile"
+      ],
+      "status": "active",
+      "connected_at": "2026-10-02T09:46:37.001Z",
+      "id": "gconn_1790934397001_qa6a",
+      "created_at": "2026-10-02T09:46:37.001Z",
+      "updated_at": "2026-10-02T10:44:08.068Z",
+      "last_used_at": "2026-10-02T10:44:08.068Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "provider": "google",
+      "google_account_id": "accounts/10987654321",
+      "google_email": "ahmadfaizan1999@gmail.com",
+      "access_token": "5511b8287630b7d27db42dd6:a32102dd107fbe5f3c1ddfd3121f5949:7a9b5bd6e8e5c21f8ca2631d0c62ca522c244489699409cba3a114d18599194bf849a7ebcef9f6a27d",
+      "refresh_token": "f0fe417b2878234994a7263c:2d012ab02a6ad15041fd6f160416bf53:a5ab9916ee4fa1e3aa0feef5b60b57e0cf613c09075a48ef99ebb77782cb66a3",
+      "token_expires_at": "2026-10-02T11:44:08.069Z",
+      "scopes": [
+        "https://www.googleapis.com/auth/business.manage",
+        "openid",
+        "email",
+        "profile"
+      ],
+      "status": "active",
+      "connected_at": "2026-10-02T09:46:50.903Z",
+      "id": "gconn_1790934410903_6hma",
+      "created_at": "2026-10-02T09:46:50.903Z",
+      "updated_at": "2026-10-02T10:44:08.069Z",
+      "last_used_at": "2026-10-02T10:44:08.069Z"
+    }
+  ],
+  "google_locations": [
+    {
+      "id": "gloc_001",
+      "business_id": "biz_001",
+      "place_id": "ChIJ59Z_EXAMPLE_MUZAFFARABAD",
+      "location_title": "Muzaffarabad azad jamu and kashmir",
+      "address": "9F4G+2Q8, Domail Muzaffarabad",
+      "phone": "+91 8877307350",
+      "review_url": "https://g.page/r/CbX7-reviewflow/review",
+      "rating": 4.9,
+      "review_count": 148,
+      "verified": true,
+      "status": "active",
+      "last_synced_at": "2026-10-01T20:02:14.821Z",
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-01T20:02:14.821Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_001",
+      "business_id": "biz_001",
+      "google_location_id": "gloc_001",
+      "google_review_id": "g_rev_101",
+      "reviewer_name": "Priya Sharma",
+      "reviewer_photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100",
+      "rating": 5,
+      "comment": "Outstanding care from the team! Dr. Sharma explained everything patiently. The clinic is spotless and modern.",
+      "review_created_at": "2026-09-29T20:02:14.821Z",
+      "owner_reply": "Thank you so much Priya! It was our pleasure to take care of you.",
+      "reply_status": "replied",
+      "reply_source": "ai",
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-01T20:02:14.821Z"
+    },
+    {
+      "id": "rev_002",
+      "business_id": "biz_001",
+      "google_location_id": "gloc_001",
+      "google_review_id": "g_rev_102",
+      "reviewer_name": "Rahul Verma",
+      "reviewer_photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100",
+      "rating": 5,
+      "comment": "Very professional appointment scheduling. Fast consultation and affordable pricing.",
+      "review_created_at": "2026-09-26T20:02:14.821Z",
+      "reply_status": "unanswered",
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-01T20:02:14.821Z"
+    },
+    {
+      "id": "rev_003",
+      "business_id": "biz_001",
+      "google_location_id": "gloc_001",
+      "reviewer_name": "Vikram Mehta",
+      "rating": 2,
+      "comment": "Waited 35 minutes past my scheduled appointment time before being called into the room.",
+      "review_created_at": "2026-09-30T20:02:14.821Z",
+      "reply_status": "unanswered",
+      "policy_violation_status": "none",
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-01T20:02:14.821Z"
+    },
+    {
+      "business_id": "biz_001",
+      "google_location_id": "gloc_001",
+      "reviewer_name": "Alina Khan",
+      "rating": 5,
+      "comment": "Exceptional care, fast and friendly!",
+      "review_created_at": "2026-10-01T20:07:07.696Z",
+      "reply_status": "unanswered",
+      "raw_payload": {
+        "source": "qr_funnel",
+        "funnel_id": "fnl_001"
+      },
+      "id": "rev_1790885227696_u0vnl",
+      "created_at": "2026-10-01T20:07:07.696Z",
+      "updated_at": "2026-10-01T20:07:07.696Z"
+    },
+    {
+      "business_id": "biz_001",
+      "google_location_id": "gloc_001",
+      "reviewer_name": "Tariq",
+      "rating": 2,
+      "comment": "Appointment delayed by 40 minutes.",
+      "review_created_at": "2026-10-01T20:07:07.715Z",
+      "reply_status": "unanswered",
+      "raw_payload": {
+        "source": "qr_funnel",
+        "funnel_id": "fnl_001"
+      },
+      "id": "rev_1790885227715_btqxi",
+      "created_at": "2026-10-01T20:07:07.715Z",
+      "updated_at": "2026-10-01T20:07:07.715Z"
+    },
+    {
+      "business_id": "biz_1790886375402_huku9",
+      "google_location_id": "loc_1790886375406_42j1",
+      "reviewer_name": "Anonymous Customer",
+      "rating": 5,
+      "comment": "Outstanding food and delightful ambiance!",
+      "review_created_at": "2026-10-01T20:26:15.449Z",
+      "reply_status": "unanswered",
+      "raw_payload": {
+        "source": "qr_funnel",
+        "funnel_id": "fnl_1790886375411_hcn6"
+      },
+      "id": "rev_1790886375450_yl2k9",
+      "created_at": "2026-10-01T20:26:15.450Z",
+      "updated_at": "2026-10-01T20:26:15.450Z"
+    },
+    {
+      "business_id": "biz_1790886391076_gbh5w",
+      "google_location_id": "loc_1790886391087_37lu",
+      "reviewer_name": "Anonymous Customer",
+      "rating": 5,
+      "comment": "Outstanding food and delightful ambiance!",
+      "review_created_at": "2026-10-01T20:26:31.135Z",
+      "reply_status": "unanswered",
+      "raw_payload": {
+        "source": "qr_funnel",
+        "funnel_id": "fnl_1790886391094_bdh9"
+      },
+      "id": "rev_1790886391135_vpw6m",
+      "created_at": "2026-10-01T20:26:31.135Z",
+      "updated_at": "2026-10-01T20:26:31.135Z"
+    },
+    {
+      "business_id": "biz_1790886409361_6ei1h",
+      "google_location_id": "loc_1790886409367_mz3p",
+      "reviewer_name": "Anonymous Customer",
+      "rating": 5,
+      "comment": "Outstanding food and delightful ambiance!",
+      "review_created_at": "2026-10-01T20:26:49.427Z",
+      "reply_status": "unanswered",
+      "raw_payload": {
+        "source": "qr_funnel",
+        "funnel_id": "fnl_1790886409373_bh9v"
+      },
+      "id": "rev_1790886409427_m6avg",
+      "created_at": "2026-10-01T20:26:49.427Z",
+      "updated_at": "2026-10-01T20:26:49.427Z"
+    },
+    {
+      "business_id": "biz_1790933514884_urcrf",
+      "google_location_id": "loc_1790933514890_u6rj",
+      "reviewer_name": "Anonymous Customer",
+      "rating": 5,
+      "comment": "Outstanding food and delightful ambiance!",
+      "review_created_at": "2026-10-02T09:31:54.949Z",
+      "reply_status": "unanswered",
+      "raw_payload": {
+        "source": "qr_funnel",
+        "funnel_id": "fnl_1790933514896_80o0"
+      },
+      "id": "rev_1790933514949_upjfb",
+      "created_at": "2026-10-02T09:31:54.949Z",
+      "updated_at": "2026-10-02T09:31:54.949Z"
+    },
+    {
+      "business_id": "biz_1790933531859_p1tll",
+      "google_location_id": "loc_1790933531865_23zf",
+      "reviewer_name": "Anonymous Customer",
+      "rating": 5,
+      "comment": "Outstanding food and delightful ambiance!",
+      "review_created_at": "2026-10-02T09:32:11.905Z",
+      "reply_status": "unanswered",
+      "raw_payload": {
+        "source": "qr_funnel",
+        "funnel_id": "fnl_1790933531869_7sbj"
+      },
+      "id": "rev_1790933531905_bx12n",
+      "created_at": "2026-10-02T09:32:11.905Z",
+      "updated_at": "2026-10-02T09:32:11.905Z"
+    }
+  ],
+  "review_funnels": [
+    {
+      "id": "fnl_001",
+      "business_id": "biz_001",
+      "google_location_id": "gloc_001",
+      "name": "Main Entrance QR Funnel",
+      "slug": "muzaffarabad-reviews",
+      "title": "How was your experience today?",
+      "subtitle": "Your feedback helps our doctors and team improve care every day.",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://g.page/r/CbX7-reviewflow/review",
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-01T20:02:14.821Z"
+    },
+    {
+      "business_id": "biz_1790885529543_kq4bo",
+      "location_id": "loc_1790885529565_z9ts",
+      "name": "Dining Room Feedback",
+      "slug": "dining-room-feedback",
+      "title": "How was your meal today?",
+      "subtitle": "Please share your experience with us",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "id": "fnl_1790885529575_schj",
+      "created_at": "2026-10-01T20:12:09.575Z",
+      "updated_at": "2026-10-01T20:12:09.575Z"
+    },
+    {
+      "business_id": "biz_1790886214576_p9xrs",
+      "location_id": "loc_1790886214600_3tzf",
+      "name": "Dining Room Feedback",
+      "slug": "dining-room-feedback-2",
+      "title": "How was your meal today?",
+      "subtitle": "Please share your experience with us",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "id": "fnl_1790886214614_i2i6",
+      "created_at": "2026-10-01T20:23:34.614Z",
+      "updated_at": "2026-10-01T20:23:34.614Z"
+    },
+    {
+      "business_id": "biz_1790886375402_huku9",
+      "location_id": "loc_1790886375406_42j1",
+      "name": "Grand Bistro Review Funnel",
+      "slug": "grand-bistro-review-funnel",
+      "title": "Tell Us About Your Dining Experience",
+      "subtitle": "Your feedback helps other local customers find trusted care.",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://g.page/r/sample-bistro/review",
+      "id": "fnl_1790886375411_hcn6",
+      "created_at": "2026-10-01T20:26:15.411Z",
+      "updated_at": "2026-10-01T20:26:15.411Z"
+    },
+    {
+      "business_id": "biz_1790886391076_gbh5w",
+      "location_id": "loc_1790886391087_37lu",
+      "name": "Grand Bistro Review Funnel",
+      "slug": "grand-bistro-review-funnel-2",
+      "title": "Tell Us About Your Dining Experience",
+      "subtitle": "Your feedback helps other local customers find trusted care.",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://g.page/r/sample-bistro/review",
+      "id": "fnl_1790886391094_bdh9",
+      "created_at": "2026-10-01T20:26:31.094Z",
+      "updated_at": "2026-10-01T20:26:31.094Z"
+    },
+    {
+      "business_id": "biz_1790886409361_6ei1h",
+      "location_id": "loc_1790886409367_mz3p",
+      "name": "Grand Bistro Review Funnel",
+      "slug": "grand-bistro-review-funnel-3",
+      "title": "Tell Us About Your Dining Experience",
+      "subtitle": "Your feedback helps other local customers find trusted care.",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://g.page/r/sample-bistro/review",
+      "id": "fnl_1790886409373_bh9v",
+      "created_at": "2026-10-01T20:26:49.373Z",
+      "updated_at": "2026-10-01T20:26:49.373Z"
+    },
+    {
+      "business_id": "biz_1790933511115_wr08y",
+      "location_id": "loc_1790933511138_2wdz",
+      "name": "Dining Room Feedback",
+      "slug": "dining-room-feedback-3",
+      "title": "How was your meal today?",
+      "subtitle": "Please share your experience with us",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "id": "fnl_1790933511148_adpo",
+      "created_at": "2026-10-02T09:31:51.148Z",
+      "updated_at": "2026-10-02T09:31:51.148Z"
+    },
+    {
+      "business_id": "biz_1790933514884_urcrf",
+      "location_id": "loc_1790933514890_u6rj",
+      "name": "Grand Bistro Review Funnel",
+      "slug": "grand-bistro-review-funnel-4",
+      "title": "Tell Us About Your Dining Experience",
+      "subtitle": "Your feedback helps other local customers find trusted care.",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://g.page/r/sample-bistro/review",
+      "id": "fnl_1790933514896_80o0",
+      "created_at": "2026-10-02T09:31:54.896Z",
+      "updated_at": "2026-10-02T09:31:54.896Z"
+    },
+    {
+      "business_id": "biz_1790933530453_vpqq9",
+      "location_id": "loc_1790933530476_e1bf",
+      "name": "Dining Room Feedback",
+      "slug": "dining-room-feedback-4",
+      "title": "How was your meal today?",
+      "subtitle": "Please share your experience with us",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://maps.google.com/?cid=12345",
+      "id": "fnl_1790933530486_6k31",
+      "created_at": "2026-10-02T09:32:10.486Z",
+      "updated_at": "2026-10-02T09:32:10.486Z"
+    },
+    {
+      "business_id": "biz_1790933531859_p1tll",
+      "location_id": "loc_1790933531865_23zf",
+      "name": "Grand Bistro Review Funnel",
+      "slug": "grand-bistro-review-funnel-5",
+      "title": "Tell Us About Your Dining Experience",
+      "subtitle": "Your feedback helps other local customers find trusted care.",
+      "logo": "",
+      "primary_color": "#34A853",
+      "background_color": "#F9FAFB",
+      "language": "en",
+      "enabled": true,
+      "show_customer_name": true,
+      "google_review_url": "https://g.page/r/sample-bistro/review",
+      "id": "fnl_1790933531869_7sbj",
+      "created_at": "2026-10-02T09:32:11.869Z",
+      "updated_at": "2026-10-02T09:32:11.869Z"
+    }
+  ],
+  "qr_codes": [
+    {
+      "id": "qr_001",
+      "business_id": "biz_001",
+      "funnel_id": "fnl_001",
+      "name": "Reception Counter QR Stand",
+      "short_code": "muz-rec",
+      "destination_url": "/r/muzaffarabad-reviews",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "scan_count": 49,
+      "status": "active",
+      "created_at": "2026-10-01T20:02:14.821Z",
+      "updated_at": "2026-10-01T20:02:14.821Z"
+    },
+    {
+      "business_id": "biz_1790885529543_kq4bo",
+      "funnel_id": "fnl_1790885529575_schj",
+      "name": "Table 5 QR Stand",
+      "short_code": "F94sxc",
+      "destination_url": "/r/dining-room-feedback",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790885529592_u5yo",
+      "scan_count": 1,
+      "created_at": "2026-10-01T20:12:09.592Z",
+      "updated_at": "2026-10-01T20:12:09.592Z"
+    },
+    {
+      "business_id": "biz_1790886214576_p9xrs",
+      "funnel_id": "fnl_1790886214614_i2i6",
+      "name": "Table 5 QR Stand",
+      "short_code": "MschEn",
+      "destination_url": "/r/dining-room-feedback-2",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790886214635_tfxw",
+      "scan_count": 1,
+      "created_at": "2026-10-01T20:23:34.635Z",
+      "updated_at": "2026-10-01T20:23:34.635Z"
+    },
+    {
+      "business_id": "biz_1790886375402_huku9",
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "name": "Table Tent QR",
+      "short_code": "kJbwEy",
+      "destination_url": "/r/grand-bistro-review-funnel",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790886375419_8v6o",
+      "scan_count": 1,
+      "created_at": "2026-10-01T20:26:15.419Z",
+      "updated_at": "2026-10-01T20:26:15.419Z"
+    },
+    {
+      "business_id": "biz_1790886391076_gbh5w",
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "name": "Table Tent QR",
+      "short_code": "x8pFXR",
+      "destination_url": "/r/grand-bistro-review-funnel-2",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790886391100_o3t0",
+      "scan_count": 1,
+      "created_at": "2026-10-01T20:26:31.100Z",
+      "updated_at": "2026-10-01T20:26:31.100Z"
+    },
+    {
+      "business_id": "biz_1790886409361_6ei1h",
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "name": "Table Tent QR",
+      "short_code": "KE6Lni",
+      "destination_url": "/r/grand-bistro-review-funnel-3",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790886409379_pzas",
+      "scan_count": 1,
+      "created_at": "2026-10-01T20:26:49.379Z",
+      "updated_at": "2026-10-01T20:26:49.379Z"
+    },
+    {
+      "business_id": "biz_1790933511115_wr08y",
+      "funnel_id": "fnl_1790933511148_adpo",
+      "name": "Table 5 QR Stand",
+      "short_code": "BBvZST",
+      "destination_url": "/r/dining-room-feedback-3",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790933511168_a5tj",
+      "scan_count": 1,
+      "created_at": "2026-10-02T09:31:51.168Z",
+      "updated_at": "2026-10-02T09:31:51.168Z"
+    },
+    {
+      "business_id": "biz_1790933514884_urcrf",
+      "funnel_id": "fnl_1790933514896_80o0",
+      "name": "Table Tent QR",
+      "short_code": "gwpdmm",
+      "destination_url": "/r/grand-bistro-review-funnel-4",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790933514917_txu5",
+      "scan_count": 1,
+      "created_at": "2026-10-02T09:31:54.917Z",
+      "updated_at": "2026-10-02T09:31:54.917Z"
+    },
+    {
+      "business_id": "biz_1790933530453_vpqq9",
+      "funnel_id": "fnl_1790933530486_6k31",
+      "name": "Table 5 QR Stand",
+      "short_code": "GpfAfA",
+      "destination_url": "/r/dining-room-feedback-4",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790933530503_qrkh",
+      "scan_count": 1,
+      "created_at": "2026-10-02T09:32:10.503Z",
+      "updated_at": "2026-10-02T09:32:10.503Z"
+    },
+    {
+      "business_id": "biz_1790933531859_p1tll",
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "name": "Table Tent QR",
+      "short_code": "FgY9gV",
+      "destination_url": "/r/grand-bistro-review-funnel-5",
+      "style": "modern_dots",
+      "foreground_color": "#166534",
+      "background_color": "#FFFFFF",
+      "logo": "",
+      "status": "active",
+      "id": "qr_1790933531877_mrdy",
+      "scan_count": 1,
+      "created_at": "2026-10-02T09:32:11.877Z",
+      "updated_at": "2026-10-02T09:32:11.877Z"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan_free_trial",
+      "name": "Free Trial",
+      "slug": "free-trial",
+      "price": 0,
+      "currency": "INR",
+      "billing_interval": "month",
+      "max_businesses": 1,
+      "max_locations": 1,
+      "max_qr_codes": 2,
+      "monthly_scans": 100,
+      "ai_generations": 20,
+      "analytics_enabled": true,
+      "google_integration": true,
+      "white_label": false,
+      "api_access": false,
+      "status": "active"
+    },
+    {
+      "id": "plan_starter_monthly",
+      "name": "Monthly Plan (Starter)",
+      "slug": "starter-monthly",
+      "price": 199,
+      "currency": "INR",
+      "billing_interval": "month",
+      "max_businesses": 1,
+      "max_locations": 1,
+      "max_qr_codes": 5,
+      "monthly_scans": 1000,
+      "ai_generations": 250,
+      "analytics_enabled": true,
+      "google_integration": true,
+      "white_label": false,
+      "api_access": false,
+      "status": "active"
+    },
+    {
+      "id": "plan_yearly_individual",
+      "name": "Yearly Plan (Individual)",
+      "slug": "yearly-individual",
+      "price": 1199,
+      "currency": "INR",
+      "billing_interval": "year",
+      "max_businesses": 1,
+      "max_locations": 1,
+      "max_qr_codes": 10,
+      "monthly_scans": 5000,
+      "ai_generations": 1500,
+      "analytics_enabled": true,
+      "google_integration": true,
+      "white_label": true,
+      "api_access": false,
+      "status": "active"
+    },
+    {
+      "id": "plan_agency_custom",
+      "name": "Multi-Business Agency Plan",
+      "slug": "agency-custom",
+      "price": 4999,
+      "currency": "INR",
+      "billing_interval": "month",
+      "max_businesses": 50,
+      "max_locations": 50,
+      "max_qr_codes": 200,
+      "monthly_scans": 50000,
+      "ai_generations": 10000,
+      "analytics_enabled": true,
+      "google_integration": true,
+      "white_label": true,
+      "api_access": true,
+      "status": "active"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_001",
+      "user_id": "usr_demo_002",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:02:14.821Z",
+      "ends_at": "2026-10-31T20:02:14.821Z",
+      "trial_ends_at": "2026-10-02T20:02:14.821Z"
+    },
+    {
+      "id": "sub_1790884962355",
+      "user_id": "usr_1790884962355_4ug9x",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:02:42.355Z",
+      "ends_at": "2026-10-31T20:02:42.355Z"
+    },
+    {
+      "id": "sub_1790885516937",
+      "user_id": "usr_1790885516937_696c6",
+      "plan_id": "plan_agency_custom",
+      "gateway": "upi",
+      "status": "active",
+      "starts_at": "2026-10-01T20:11:57.075Z",
+      "ends_at": "2026-10-31T20:11:57.075Z"
+    },
+    {
+      "id": "sub_1790885517055",
+      "user_id": "usr_1790885517055_z3svm",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:11:57.055Z",
+      "ends_at": "2026-10-31T20:11:57.055Z"
+    },
+    {
+      "id": "sub_1790885529416",
+      "user_id": "usr_1790885529416_bpke0",
+      "plan_id": "plan_agency_custom",
+      "gateway": "upi",
+      "status": "active",
+      "starts_at": "2026-10-01T20:12:09.554Z",
+      "ends_at": "2026-10-31T20:12:09.554Z"
+    },
+    {
+      "id": "sub_1790885529532",
+      "user_id": "usr_1790885529532_94q3f",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:12:09.532Z",
+      "ends_at": "2026-10-31T20:12:09.532Z"
+    },
+    {
+      "id": "sub_1790886214454",
+      "user_id": "usr_1790886214453_r9v1j",
+      "plan_id": "plan_agency_custom",
+      "gateway": "upi",
+      "status": "active",
+      "starts_at": "2026-10-01T20:23:34.587Z",
+      "ends_at": "2026-10-31T20:23:34.587Z"
+    },
+    {
+      "id": "sub_1790886214566",
+      "user_id": "usr_1790886214566_imile",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:23:34.566Z",
+      "ends_at": "2026-10-31T20:23:34.566Z"
+    },
+    {
+      "id": "sub_1790886375283",
+      "user_id": "usr_1790886375283_swz94",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:26:15.283Z",
+      "ends_at": "2026-10-31T20:26:15.283Z"
+    },
+    {
+      "id": "sub_1790886375394",
+      "user_id": "usr_1790886375394_rl4c9",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:26:15.394Z",
+      "ends_at": "2026-10-31T20:26:15.394Z"
+    },
+    {
+      "id": "sub_1790886390953",
+      "user_id": "usr_1790886390953_q1ll1",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:26:30.953Z",
+      "ends_at": "2026-10-31T20:26:30.953Z"
+    },
+    {
+      "id": "sub_1790886391066",
+      "user_id": "usr_1790886391066_69p0f",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:26:31.066Z",
+      "ends_at": "2026-10-31T20:26:31.066Z"
+    },
+    {
+      "id": "sub_1790886409227",
+      "user_id": "usr_1790886409227_1z2mu",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:26:49.227Z",
+      "ends_at": "2026-10-31T20:26:49.227Z"
+    },
+    {
+      "id": "sub_1790886409352",
+      "user_id": "usr_1790886409352_lyz3j",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-01T20:26:49.352Z",
+      "ends_at": "2026-10-31T20:26:49.352Z"
+    },
+    {
+      "id": "sub_1790933505207",
+      "user_id": "usr_1790933505207_yfxrk",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:31:45.207Z",
+      "ends_at": "2026-11-01T09:31:45.207Z"
+    },
+    {
+      "id": "sub_1790933505325",
+      "user_id": "usr_1790933505324_xamkx",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:31:45.324Z",
+      "ends_at": "2026-11-01T09:31:45.324Z"
+    },
+    {
+      "id": "sub_1790933510991",
+      "user_id": "usr_1790933510991_q9qmb",
+      "plan_id": "plan_agency_custom",
+      "gateway": "upi",
+      "status": "active",
+      "starts_at": "2026-10-02T09:31:51.125Z",
+      "ends_at": "2026-11-01T09:31:51.126Z"
+    },
+    {
+      "id": "sub_1790933511105",
+      "user_id": "usr_1790933511105_y7roa",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:31:51.105Z",
+      "ends_at": "2026-11-01T09:31:51.105Z"
+    },
+    {
+      "id": "sub_1790933514762",
+      "user_id": "usr_1790933514762_rj0ot",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:31:54.762Z",
+      "ends_at": "2026-11-01T09:31:54.762Z"
+    },
+    {
+      "id": "sub_1790933514875",
+      "user_id": "usr_1790933514875_1aivu",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:31:54.875Z",
+      "ends_at": "2026-11-01T09:31:54.875Z"
+    },
+    {
+      "id": "sub_1790933530332",
+      "user_id": "usr_1790933530332_faffh",
+      "plan_id": "plan_agency_custom",
+      "gateway": "upi",
+      "status": "active",
+      "starts_at": "2026-10-02T09:32:10.465Z",
+      "ends_at": "2026-11-01T09:32:10.465Z"
+    },
+    {
+      "id": "sub_1790933530446",
+      "user_id": "usr_1790933530446_rx3hz",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:32:10.446Z",
+      "ends_at": "2026-11-01T09:32:10.446Z"
+    },
+    {
+      "id": "sub_1790933531738",
+      "user_id": "usr_1790933531738_ntasp",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:32:11.738Z",
+      "ends_at": "2026-11-01T09:32:11.738Z"
+    },
+    {
+      "id": "sub_1790933531850",
+      "user_id": "usr_1790933531850_estsc",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:32:11.850Z",
+      "ends_at": "2026-11-01T09:32:11.850Z"
+    },
+    {
+      "id": "sub_1790933533140",
+      "user_id": "usr_1790933533140_lagov",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:32:13.140Z",
+      "ends_at": "2026-11-01T09:32:13.140Z"
+    },
+    {
+      "id": "sub_1790933533260",
+      "user_id": "usr_1790933533260_2pew0",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:32:13.260Z",
+      "ends_at": "2026-11-01T09:32:13.260Z"
+    },
+    {
+      "id": "sub_1790933784121",
+      "user_id": "usr_1790933784121_q8m26",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:36:24.121Z",
+      "ends_at": "2026-11-01T09:36:24.121Z"
+    },
+    {
+      "id": "sub_1790933784271",
+      "user_id": "usr_1790933784271_8211y",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:36:24.271Z",
+      "ends_at": "2026-11-01T09:36:24.271Z"
+    },
+    {
+      "id": "sub_1790934348775",
+      "user_id": "usr_1790934348775_8ouin",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:45:48.775Z",
+      "ends_at": "2026-11-01T09:45:48.775Z"
+    },
+    {
+      "id": "sub_1790934348895",
+      "user_id": "usr_1790934348895_vcjar",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:45:48.895Z",
+      "ends_at": "2026-11-01T09:45:48.895Z"
+    },
+    {
+      "id": "sub_1790934371311",
+      "user_id": "usr_1790934371311_wavpj",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:46:11.311Z",
+      "ends_at": "2026-11-01T09:46:11.311Z"
+    },
+    {
+      "id": "sub_1790934371431",
+      "user_id": "usr_1790934371431_njhlz",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:46:11.431Z",
+      "ends_at": "2026-11-01T09:46:11.431Z"
+    },
+    {
+      "id": "sub_1790934396855",
+      "user_id": "usr_1790934396855_ojn51",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:46:36.855Z",
+      "ends_at": "2026-11-01T09:46:36.855Z"
+    },
+    {
+      "id": "sub_1790934396970",
+      "user_id": "usr_1790934396970_u46ox",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:46:36.970Z",
+      "ends_at": "2026-11-01T09:46:36.970Z"
+    },
+    {
+      "id": "sub_1790934410752",
+      "user_id": "usr_1790934410752_1wytn",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:46:50.752Z",
+      "ends_at": "2026-11-01T09:46:50.752Z"
+    },
+    {
+      "id": "sub_1790934410875",
+      "user_id": "usr_1790934410875_3yawo",
+      "plan_id": "plan_free_trial",
+      "gateway": "manual",
+      "status": "active",
+      "starts_at": "2026-10-02T09:46:50.875Z",
+      "ends_at": "2026-11-01T09:46:50.875Z"
+    }
+  ],
+  "payments": [
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "subscription_id": "sub_1790933530332",
+      "gateway": "upi",
+      "gateway_payment_id": "UTR-33530465",
+      "amount": 4999,
+      "currency": "INR",
+      "status": "success",
+      "payment_method": "UPI",
+      "paid_at": "2026-10-02T09:32:10.465Z",
+      "id": "pay_1790933530465"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "subscription_id": "sub_1790933510991",
+      "gateway": "upi",
+      "gateway_payment_id": "UTR-33511126",
+      "amount": 4999,
+      "currency": "INR",
+      "status": "success",
+      "payment_method": "UPI",
+      "paid_at": "2026-10-02T09:31:51.126Z",
+      "id": "pay_1790933511126"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "subscription_id": "sub_1790886214454",
+      "gateway": "upi",
+      "gateway_payment_id": "UTR-86214587",
+      "amount": 4999,
+      "currency": "INR",
+      "status": "success",
+      "payment_method": "UPI",
+      "paid_at": "2026-10-01T20:23:34.587Z",
+      "id": "pay_1790886214587"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "subscription_id": "sub_1790885529416",
+      "gateway": "upi",
+      "gateway_payment_id": "UTR-85529554",
+      "amount": 4999,
+      "currency": "INR",
+      "status": "success",
+      "payment_method": "UPI",
+      "paid_at": "2026-10-01T20:12:09.554Z",
+      "id": "pay_1790885529554"
+    },
+    {
+      "user_id": "usr_1790885516937_696c6",
+      "subscription_id": "sub_1790885516937",
+      "gateway": "upi",
+      "gateway_payment_id": "UTR-85517075",
+      "amount": 4999,
+      "currency": "INR",
+      "status": "success",
+      "payment_method": "UPI",
+      "paid_at": "2026-10-01T20:11:57.075Z",
+      "id": "pay_1790885517075"
+    }
+  ],
+  "audit_logs": [
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.logout",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938973925_0d5p",
+      "created_at": "2026-10-02T11:02:53.925Z"
+    },
+    {
+      "user_id": "usr_admin_001",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_admin_001",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938973861_b4zj",
+      "created_at": "2026-10-02T11:02:53.861Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938973629_hjt8",
+      "created_at": "2026-10-02T11:02:53.629Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.logout",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938936533_2tk9",
+      "created_at": "2026-10-02T11:02:16.533Z"
+    },
+    {
+      "user_id": "usr_admin_001",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_admin_001",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938936473_mga6",
+      "created_at": "2026-10-02T11:02:16.473Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938936235_15b7",
+      "created_at": "2026-10-02T11:02:16.235Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.logout",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938917072_mgv2",
+      "created_at": "2026-10-02T11:01:57.072Z"
+    },
+    {
+      "user_id": "usr_admin_001",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_admin_001",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938916983_bdmg",
+      "created_at": "2026-10-02T11:01:56.983Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938916740_u2na",
+      "created_at": "2026-10-02T11:01:56.740Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790938774753_adxk",
+      "created_at": "2026-10-02T10:59:34.753Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790934410909_b8vm",
+      "id": "aud_1790937848069_ipid",
+      "created_at": "2026-10-02T10:44:08.069Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790934397012_8yv1",
+      "id": "aud_1790937848069_xt4r",
+      "created_at": "2026-10-02T10:44:08.069Z"
+    },
+    {
+      "user_id": "usr_admin_001",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_admin_001",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790936035214_azmg",
+      "created_at": "2026-10-02T10:13:55.214Z"
+    },
+    {
+      "user_id": "usr_admin_001",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_admin_001",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790936027703_77x0",
+      "created_at": "2026-10-02T10:13:47.703Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "action": "review.ai_reply_published",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "new_values": {
+        "reply": "Thank you for visiting Metro Dental! Our doctors loved caring for you.",
+        "suggestion_id": "sug_1790934449647_j182"
+      },
+      "id": "aud_1790934449673_e401",
+      "created_at": "2026-10-02T09:47:29.673Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790934410909_b8vm",
+      "id": "aud_1790934410917_yo39",
+      "created_at": "2026-10-02T09:46:50.917Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790934410909_b8vm",
+      "id": "aud_1790934410911_iyg5",
+      "created_at": "2026-10-02T09:46:50.911Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "action": "google.location_linked",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790934410909_b8vm",
+      "id": "aud_1790934410909_7ff4",
+      "created_at": "2026-10-02T09:46:50.909Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "action": "google.connected",
+      "entity_type": "google_connection",
+      "entity_id": "gconn_1790934410903_6hma",
+      "id": "aud_1790934410903_gomb",
+      "created_at": "2026-10-02T09:46:50.903Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790934410885_l7mp1",
+      "new_values": {
+        "name": "Metro Dental & Diagnostics",
+        "slug": "metro-dental-diagnostics-4"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934410885_78zs",
+      "created_at": "2026-10-02T09:46:50.885Z"
+    },
+    {
+      "user_id": "usr_1790934410875_3yawo",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790934410875_3yawo",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934410876_kr9m",
+      "created_at": "2026-10-02T09:46:50.876Z"
+    },
+    {
+      "user_id": "usr_1790934410752_1wytn",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790934410752_1wytn",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934410752_g3h5",
+      "created_at": "2026-10-02T09:46:50.752Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790934397012_8yv1",
+      "id": "aud_1790934397022_3a0w",
+      "created_at": "2026-10-02T09:46:37.022Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790934397012_8yv1",
+      "id": "aud_1790934397014_6l84",
+      "created_at": "2026-10-02T09:46:37.014Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "action": "google.location_linked",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790934397012_8yv1",
+      "id": "aud_1790934397012_zcxq",
+      "created_at": "2026-10-02T09:46:37.012Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "action": "google.connected",
+      "entity_type": "google_connection",
+      "entity_id": "gconn_1790934397001_qa6a",
+      "id": "aud_1790934397001_lyxq",
+      "created_at": "2026-10-02T09:46:37.001Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790934396979_ql1lf",
+      "new_values": {
+        "name": "Metro Dental & Diagnostics",
+        "slug": "metro-dental-diagnostics-3"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934396980_38p7",
+      "created_at": "2026-10-02T09:46:36.980Z"
+    },
+    {
+      "user_id": "usr_1790934396970_u46ox",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790934396970_u46ox",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934396971_wrhy",
+      "created_at": "2026-10-02T09:46:36.971Z"
+    },
+    {
+      "user_id": "usr_1790934396855_ojn51",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790934396855_ojn51",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934396855_oxy1",
+      "created_at": "2026-10-02T09:46:36.855Z"
+    },
+    {
+      "user_id": "usr_1790934371311_wavpj",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790934371441_ueshd",
+      "new_values": {
+        "name": "Metro Dental & Diagnostics",
+        "slug": "metro-dental-diagnostics-2"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934371441_s0ht",
+      "created_at": "2026-10-02T09:46:11.441Z"
+    },
+    {
+      "user_id": "usr_1790934371431_njhlz",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790934371431_njhlz",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934371432_zpwd",
+      "created_at": "2026-10-02T09:46:11.432Z"
+    },
+    {
+      "user_id": "usr_1790934371311_wavpj",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790934371311_wavpj",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934371312_o7n0",
+      "created_at": "2026-10-02T09:46:11.312Z"
+    },
+    {
+      "user_id": "usr_1790934348775_8ouin",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790934348904_rnm0o",
+      "new_values": {
+        "name": "Metro Dental & Diagnostics",
+        "slug": "metro-dental-diagnostics"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934348905_eirc",
+      "created_at": "2026-10-02T09:45:48.905Z"
+    },
+    {
+      "user_id": "usr_1790934348895_vcjar",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790934348895_vcjar",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934348896_rfnh",
+      "created_at": "2026-10-02T09:45:48.896Z"
+    },
+    {
+      "user_id": "usr_1790934348775_8ouin",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790934348775_8ouin",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790934348776_co3v",
+      "created_at": "2026-10-02T09:45:48.776Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "google.disconnected",
+      "entity_type": "google_connection",
+      "entity_id": "gconn_1790933784318_n72y",
+      "id": "aud_1790933785609_t8c8",
+      "created_at": "2026-10-02T09:36:25.609Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "review.reply_deleted",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933785604_vp81",
+      "created_at": "2026-10-02T09:36:25.604Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "review.reply_updated",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933785599_ufst",
+      "created_at": "2026-10-02T09:36:25.599Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "review.reply_published",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933785594_bhh7",
+      "created_at": "2026-10-02T09:36:25.594Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933784343_quh5",
+      "id": "aud_1790933784965_zj9k",
+      "created_at": "2026-10-02T09:36:24.965Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933784343_quh5",
+      "id": "aud_1790933784354_6k7o",
+      "created_at": "2026-10-02T09:36:24.354Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933784343_quh5",
+      "id": "aud_1790933784345_jfme",
+      "created_at": "2026-10-02T09:36:24.345Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "google.location_linked",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933784343_quh5",
+      "id": "aud_1790933784344_edit",
+      "created_at": "2026-10-02T09:36:24.344Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "google.connected",
+      "entity_type": "google_connection",
+      "entity_id": "gconn_1790933784318_n72y",
+      "id": "aud_1790933784319_f1fu",
+      "created_at": "2026-10-02T09:36:24.319Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790933784298_u1c6",
+      "new_values": {
+        "name": "Sector 12 Main Branch",
+        "business_id": "biz_1790933784290_jb5zh"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933784298_k0lb",
+      "created_at": "2026-10-02T09:36:24.298Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933784290_jb5zh",
+      "new_values": {
+        "name": "Apex Health Clinic",
+        "slug": "apex-health-clinic-3"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933784290_1h8h",
+      "created_at": "2026-10-02T09:36:24.290Z"
+    },
+    {
+      "user_id": "usr_1790933784271_8211y",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933784271_8211y",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933784271_0me2",
+      "created_at": "2026-10-02T09:36:24.271Z"
+    },
+    {
+      "user_id": "usr_1790933784121_q8m26",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933784121_q8m26",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933784122_lso7",
+      "created_at": "2026-10-02T09:36:24.122Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "google.disconnected",
+      "entity_type": "google_connection",
+      "entity_id": "gconn_1790933533308_n22k",
+      "id": "aud_1790933534611_h3r0",
+      "created_at": "2026-10-02T09:32:14.611Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "review.reply_deleted",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933534604_52kn",
+      "created_at": "2026-10-02T09:32:14.604Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "review.reply_updated",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933534598_o58l",
+      "created_at": "2026-10-02T09:32:14.598Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "review.reply_published",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933534593_qdaz",
+      "created_at": "2026-10-02T09:32:14.593Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933533340_of33",
+      "id": "aud_1790933533960_vb7j",
+      "created_at": "2026-10-02T09:32:13.960Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933533340_of33",
+      "id": "aud_1790933533349_qum5",
+      "created_at": "2026-10-02T09:32:13.349Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933533340_of33",
+      "id": "aud_1790933533341_i3du",
+      "created_at": "2026-10-02T09:32:13.341Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "google.location_linked",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933533340_of33",
+      "id": "aud_1790933533340_osvy",
+      "created_at": "2026-10-02T09:32:13.340Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "google.connected",
+      "entity_type": "google_connection",
+      "entity_id": "gconn_1790933533308_n22k",
+      "id": "aud_1790933533308_aqry",
+      "created_at": "2026-10-02T09:32:13.308Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790933533275_vkvs",
+      "new_values": {
+        "name": "Sector 12 Main Branch",
+        "business_id": "biz_1790933533268_iyhd2"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933533275_xwh1",
+      "created_at": "2026-10-02T09:32:13.275Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933533268_iyhd2",
+      "new_values": {
+        "name": "Apex Health Clinic",
+        "slug": "apex-health-clinic-2"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933533269_ajwk",
+      "created_at": "2026-10-02T09:32:13.269Z"
+    },
+    {
+      "user_id": "usr_1790933533260_2pew0",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933533260_2pew0",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933533260_s08f",
+      "created_at": "2026-10-02T09:32:13.260Z"
+    },
+    {
+      "user_id": "usr_1790933533140_lagov",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933533140_lagov",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933533140_kc52",
+      "created_at": "2026-10-02T09:32:13.140Z"
+    },
+    {
+      "user_id": "usr_1790933531738_ntasp",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790933531877_mrdy",
+      "new_values": {
+        "name": "Table Tent QR",
+        "short_code": "FgY9gV",
+        "destination_url": "/r/grand-bistro-review-funnel-5"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933531877_0cob",
+      "created_at": "2026-10-02T09:32:11.877Z"
+    },
+    {
+      "user_id": "usr_1790933531738_ntasp",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790933531869_7sbj",
+      "new_values": {
+        "name": "Grand Bistro Review Funnel",
+        "slug": "grand-bistro-review-funnel-5",
+        "business_id": "biz_1790933531859_p1tll"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933531870_zm3z",
+      "created_at": "2026-10-02T09:32:11.870Z"
+    },
+    {
+      "user_id": "usr_1790933531738_ntasp",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790933531865_23zf",
+      "new_values": {
+        "name": "Downtown Analytics Branch",
+        "business_id": "biz_1790933531859_p1tll"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933531865_nprt",
+      "created_at": "2026-10-02T09:32:11.865Z"
+    },
+    {
+      "user_id": "usr_1790933531738_ntasp",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933531859_p1tll",
+      "new_values": {
+        "name": "The Grand Analytics Bistro",
+        "slug": "the-grand-analytics-bistro-5"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933531859_wfp3",
+      "created_at": "2026-10-02T09:32:11.859Z"
+    },
+    {
+      "user_id": "usr_1790933531850_estsc",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933531850_estsc",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933531850_82ej",
+      "created_at": "2026-10-02T09:32:11.850Z"
+    },
+    {
+      "user_id": "usr_1790933531738_ntasp",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933531738_ntasp",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933531739_og09",
+      "created_at": "2026-10-02T09:32:11.739Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790933530503_qrkh",
+      "new_values": {
+        "name": "Table 5 QR Stand",
+        "short_code": "GpfAfA",
+        "destination_url": "/r/dining-room-feedback-4"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933530503_rlwc",
+      "created_at": "2026-10-02T09:32:10.503Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790933530486_6k31",
+      "new_values": {
+        "name": "Dining Room Feedback",
+        "slug": "dining-room-feedback-4",
+        "business_id": "biz_1790933530453_vpqq9"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933530486_0hue",
+      "created_at": "2026-10-02T09:32:10.486Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790933530476_e1bf",
+      "new_values": {
+        "name": "Downtown Branch",
+        "business_id": "biz_1790933530453_vpqq9"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933530476_m34k",
+      "created_at": "2026-10-02T09:32:10.476Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933530470_yyfex",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-8"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933530470_yo19",
+      "created_at": "2026-10-02T09:32:10.470Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "action": "subscription.upgraded",
+      "entity_type": "subscription",
+      "entity_id": "sub_1790933530332",
+      "new_values": {
+        "plan_id": "plan_agency_custom",
+        "plan_name": "Multi-Business Agency Plan",
+        "amount": 4999
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933530465_vo5r",
+      "created_at": "2026-10-02T09:32:10.465Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933530453_vpqq9",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-7"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933530453_cz52",
+      "created_at": "2026-10-02T09:32:10.453Z"
+    },
+    {
+      "user_id": "usr_1790933530446_rx3hz",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933530446_rx3hz",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933530446_x2vu",
+      "created_at": "2026-10-02T09:32:10.446Z"
+    },
+    {
+      "user_id": "usr_1790933530332_faffh",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933530332_faffh",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933530333_qu7n",
+      "created_at": "2026-10-02T09:32:10.333Z"
+    },
+    {
+      "user_id": "usr_1790933514762_rj0ot",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790933514917_txu5",
+      "new_values": {
+        "name": "Table Tent QR",
+        "short_code": "gwpdmm",
+        "destination_url": "/r/grand-bistro-review-funnel-4"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933514917_pgna",
+      "created_at": "2026-10-02T09:31:54.917Z"
+    },
+    {
+      "user_id": "usr_1790933514762_rj0ot",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790933514896_80o0",
+      "new_values": {
+        "name": "Grand Bistro Review Funnel",
+        "slug": "grand-bistro-review-funnel-4",
+        "business_id": "biz_1790933514884_urcrf"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933514896_p88r",
+      "created_at": "2026-10-02T09:31:54.896Z"
+    },
+    {
+      "user_id": "usr_1790933514762_rj0ot",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790933514890_u6rj",
+      "new_values": {
+        "name": "Downtown Analytics Branch",
+        "business_id": "biz_1790933514884_urcrf"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933514890_ucch",
+      "created_at": "2026-10-02T09:31:54.890Z"
+    },
+    {
+      "user_id": "usr_1790933514762_rj0ot",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933514884_urcrf",
+      "new_values": {
+        "name": "The Grand Analytics Bistro",
+        "slug": "the-grand-analytics-bistro-4"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933514884_pkw6",
+      "created_at": "2026-10-02T09:31:54.884Z"
+    },
+    {
+      "user_id": "usr_1790933514875_1aivu",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933514875_1aivu",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933514876_80g6",
+      "created_at": "2026-10-02T09:31:54.876Z"
+    },
+    {
+      "user_id": "usr_1790933514762_rj0ot",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933514762_rj0ot",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933514763_wmjm",
+      "created_at": "2026-10-02T09:31:54.763Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790933511168_a5tj",
+      "new_values": {
+        "name": "Table 5 QR Stand",
+        "short_code": "BBvZST",
+        "destination_url": "/r/dining-room-feedback-3"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933511168_em5x",
+      "created_at": "2026-10-02T09:31:51.168Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790933511148_adpo",
+      "new_values": {
+        "name": "Dining Room Feedback",
+        "slug": "dining-room-feedback-3",
+        "business_id": "biz_1790933511115_wr08y"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933511148_5asx",
+      "created_at": "2026-10-02T09:31:51.148Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790933511138_2wdz",
+      "new_values": {
+        "name": "Downtown Branch",
+        "business_id": "biz_1790933511115_wr08y"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933511138_nh8d",
+      "created_at": "2026-10-02T09:31:51.138Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933511132_tfb2w",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-6"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933511132_s0uf",
+      "created_at": "2026-10-02T09:31:51.132Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "action": "subscription.upgraded",
+      "entity_type": "subscription",
+      "entity_id": "sub_1790933510991",
+      "new_values": {
+        "plan_id": "plan_agency_custom",
+        "plan_name": "Multi-Business Agency Plan",
+        "amount": 4999
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933511126_3qje",
+      "created_at": "2026-10-02T09:31:51.126Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933511115_wr08y",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-5"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933511116_l4vk",
+      "created_at": "2026-10-02T09:31:51.116Z"
+    },
+    {
+      "user_id": "usr_1790933511105_y7roa",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933511105_y7roa",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933511106_zq5c",
+      "created_at": "2026-10-02T09:31:51.106Z"
+    },
+    {
+      "user_id": "usr_1790933510991_q9qmb",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933510991_q9qmb",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933510991_qj1a",
+      "created_at": "2026-10-02T09:31:50.991Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "google.disconnected",
+      "entity_type": "google_connection",
+      "entity_id": "gconn_1790933505360_dgzf",
+      "id": "aud_1790933506653_7zdh",
+      "created_at": "2026-10-02T09:31:46.653Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "review.reply_deleted",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933506650_02n7",
+      "created_at": "2026-10-02T09:31:46.650Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "review.reply_updated",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933506646_y503",
+      "created_at": "2026-10-02T09:31:46.646Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "review.reply_published",
+      "entity_type": "google_review",
+      "entity_id": "grev_1790933505390_v6kb2",
+      "id": "aud_1790933506642_id5l",
+      "created_at": "2026-10-02T09:31:46.642Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933505388_j50a",
+      "id": "aud_1790933506011_j9le",
+      "created_at": "2026-10-02T09:31:46.011Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933505388_j50a",
+      "id": "aud_1790933505399_crbs",
+      "created_at": "2026-10-02T09:31:45.399Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "review.sync_completed",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933505388_j50a",
+      "id": "aud_1790933505390_ckvg",
+      "created_at": "2026-10-02T09:31:45.390Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "google.location_linked",
+      "entity_type": "google_location_link",
+      "entity_id": "gll_1790933505388_j50a",
+      "id": "aud_1790933505388_o5t0",
+      "created_at": "2026-10-02T09:31:45.388Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "google.connected",
+      "entity_type": "google_connection",
+      "entity_id": "gconn_1790933505360_dgzf",
+      "id": "aud_1790933505360_f6ef",
+      "created_at": "2026-10-02T09:31:45.360Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790933505342_4mtw",
+      "new_values": {
+        "name": "Sector 12 Main Branch",
+        "business_id": "biz_1790933505335_c7f7i"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933505342_zgrq",
+      "created_at": "2026-10-02T09:31:45.342Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790933505335_c7f7i",
+      "new_values": {
+        "name": "Apex Health Clinic",
+        "slug": "apex-health-clinic"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933505335_n3we",
+      "created_at": "2026-10-02T09:31:45.335Z"
+    },
+    {
+      "user_id": "usr_1790933505324_xamkx",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933505324_xamkx",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933505325_aog3",
+      "created_at": "2026-10-02T09:31:45.325Z"
+    },
+    {
+      "user_id": "usr_1790933505207_yfxrk",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790933505207_yfxrk",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790933505207_9mwr",
+      "created_at": "2026-10-02T09:31:45.207Z"
+    },
+    {
+      "user_id": "usr_1790886409227_1z2mu",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790886409379_pzas",
+      "new_values": {
+        "name": "Table Tent QR",
+        "short_code": "KE6Lni",
+        "destination_url": "/r/grand-bistro-review-funnel-3"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886409379_o3dn",
+      "created_at": "2026-10-01T20:26:49.379Z"
+    },
+    {
+      "user_id": "usr_1790886409227_1z2mu",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790886409373_bh9v",
+      "new_values": {
+        "name": "Grand Bistro Review Funnel",
+        "slug": "grand-bistro-review-funnel-3",
+        "business_id": "biz_1790886409361_6ei1h"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886409373_2w8v",
+      "created_at": "2026-10-01T20:26:49.373Z"
+    },
+    {
+      "user_id": "usr_1790886409227_1z2mu",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790886409367_mz3p",
+      "new_values": {
+        "name": "Downtown Analytics Branch",
+        "business_id": "biz_1790886409361_6ei1h"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886409367_921o",
+      "created_at": "2026-10-01T20:26:49.367Z"
+    },
+    {
+      "user_id": "usr_1790886409227_1z2mu",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790886409361_6ei1h",
+      "new_values": {
+        "name": "The Grand Analytics Bistro",
+        "slug": "the-grand-analytics-bistro-3"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886409361_ea8l",
+      "created_at": "2026-10-01T20:26:49.361Z"
+    },
+    {
+      "user_id": "usr_1790886409352_lyz3j",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790886409352_lyz3j",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886409352_1npz",
+      "created_at": "2026-10-01T20:26:49.352Z"
+    },
+    {
+      "user_id": "usr_1790886409227_1z2mu",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790886409227_1z2mu",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886409228_4m4i",
+      "created_at": "2026-10-01T20:26:49.228Z"
+    },
+    {
+      "user_id": "usr_1790886390953_q1ll1",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790886391100_o3t0",
+      "new_values": {
+        "name": "Table Tent QR",
+        "short_code": "x8pFXR",
+        "destination_url": "/r/grand-bistro-review-funnel-2"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886391100_76e0",
+      "created_at": "2026-10-01T20:26:31.100Z"
+    },
+    {
+      "user_id": "usr_1790886390953_q1ll1",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790886391094_bdh9",
+      "new_values": {
+        "name": "Grand Bistro Review Funnel",
+        "slug": "grand-bistro-review-funnel-2",
+        "business_id": "biz_1790886391076_gbh5w"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886391094_m87p",
+      "created_at": "2026-10-01T20:26:31.094Z"
+    },
+    {
+      "user_id": "usr_1790886390953_q1ll1",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790886391087_37lu",
+      "new_values": {
+        "name": "Downtown Analytics Branch",
+        "business_id": "biz_1790886391076_gbh5w"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886391087_civl",
+      "created_at": "2026-10-01T20:26:31.087Z"
+    },
+    {
+      "user_id": "usr_1790886390953_q1ll1",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790886391076_gbh5w",
+      "new_values": {
+        "name": "The Grand Analytics Bistro",
+        "slug": "the-grand-analytics-bistro-2"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886391077_dm71",
+      "created_at": "2026-10-01T20:26:31.077Z"
+    },
+    {
+      "user_id": "usr_1790886391066_69p0f",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790886391066_69p0f",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886391066_l3g3",
+      "created_at": "2026-10-01T20:26:31.066Z"
+    },
+    {
+      "user_id": "usr_1790886390953_q1ll1",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790886390953_q1ll1",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886390954_1fpf",
+      "created_at": "2026-10-01T20:26:30.954Z"
+    },
+    {
+      "user_id": "usr_1790886375283_swz94",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790886375419_8v6o",
+      "new_values": {
+        "name": "Table Tent QR",
+        "short_code": "kJbwEy",
+        "destination_url": "/r/grand-bistro-review-funnel"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886375419_65kt",
+      "created_at": "2026-10-01T20:26:15.419Z"
+    },
+    {
+      "user_id": "usr_1790886375283_swz94",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790886375411_hcn6",
+      "new_values": {
+        "name": "Grand Bistro Review Funnel",
+        "slug": "grand-bistro-review-funnel",
+        "business_id": "biz_1790886375402_huku9"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886375411_cqnh",
+      "created_at": "2026-10-01T20:26:15.411Z"
+    },
+    {
+      "user_id": "usr_1790886375283_swz94",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790886375406_42j1",
+      "new_values": {
+        "name": "Downtown Analytics Branch",
+        "business_id": "biz_1790886375402_huku9"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886375406_vsrg",
+      "created_at": "2026-10-01T20:26:15.406Z"
+    },
+    {
+      "user_id": "usr_1790886375283_swz94",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790886375402_huku9",
+      "new_values": {
+        "name": "The Grand Analytics Bistro",
+        "slug": "the-grand-analytics-bistro"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886375402_iopt",
+      "created_at": "2026-10-01T20:26:15.402Z"
+    },
+    {
+      "user_id": "usr_1790886375394_rl4c9",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790886375394_rl4c9",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886375395_ak6e",
+      "created_at": "2026-10-01T20:26:15.395Z"
+    },
+    {
+      "user_id": "usr_1790886375283_swz94",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790886375283_swz94",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886375284_vsv9",
+      "created_at": "2026-10-01T20:26:15.284Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790886214635_tfxw",
+      "new_values": {
+        "name": "Table 5 QR Stand",
+        "short_code": "MschEn",
+        "destination_url": "/r/dining-room-feedback-2"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886214635_z6qb",
+      "created_at": "2026-10-01T20:23:34.635Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790886214614_i2i6",
+      "new_values": {
+        "name": "Dining Room Feedback",
+        "slug": "dining-room-feedback-2",
+        "business_id": "biz_1790886214576_p9xrs"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886214614_cadr",
+      "created_at": "2026-10-01T20:23:34.614Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790886214600_3tzf",
+      "new_values": {
+        "name": "Downtown Branch",
+        "business_id": "biz_1790886214576_p9xrs"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886214600_kqmt",
+      "created_at": "2026-10-01T20:23:34.600Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790886214592_64hkn",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-4"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886214592_3svk",
+      "created_at": "2026-10-01T20:23:34.592Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "action": "subscription.upgraded",
+      "entity_type": "subscription",
+      "entity_id": "sub_1790886214454",
+      "new_values": {
+        "plan_id": "plan_agency_custom",
+        "plan_name": "Multi-Business Agency Plan",
+        "amount": 4999
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886214587_8r18",
+      "created_at": "2026-10-01T20:23:34.587Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790886214576_p9xrs",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-3"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886214576_uklf",
+      "created_at": "2026-10-01T20:23:34.576Z"
+    },
+    {
+      "user_id": "usr_1790886214566_imile",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790886214566_imile",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886214567_qcgd",
+      "created_at": "2026-10-01T20:23:34.567Z"
+    },
+    {
+      "user_id": "usr_1790886214453_r9v1j",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790886214453_r9v1j",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886214454_873n",
+      "created_at": "2026-10-01T20:23:34.454Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790886097257_m7sj",
+      "created_at": "2026-10-01T20:21:37.257Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "action": "qr.created",
+      "entity_type": "qr",
+      "entity_id": "qr_1790885529592_u5yo",
+      "new_values": {
+        "name": "Table 5 QR Stand",
+        "short_code": "F94sxc",
+        "destination_url": "/r/dining-room-feedback"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885529592_9xqm",
+      "created_at": "2026-10-01T20:12:09.592Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "action": "funnel.created",
+      "entity_type": "funnel",
+      "entity_id": "fnl_1790885529575_schj",
+      "new_values": {
+        "name": "Dining Room Feedback",
+        "slug": "dining-room-feedback",
+        "business_id": "biz_1790885529543_kq4bo"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885529575_l42e",
+      "created_at": "2026-10-01T20:12:09.575Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "action": "location.created",
+      "entity_type": "location",
+      "entity_id": "loc_1790885529565_z9ts",
+      "new_values": {
+        "name": "Downtown Branch",
+        "business_id": "biz_1790885529543_kq4bo"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885529565_kvll",
+      "created_at": "2026-10-01T20:12:09.565Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790885529559_9ec3a",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-2"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885529560_pyao",
+      "created_at": "2026-10-01T20:12:09.560Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "action": "subscription.upgraded",
+      "entity_type": "subscription",
+      "entity_id": "sub_1790885529416",
+      "new_values": {
+        "plan_id": "plan_agency_custom",
+        "plan_name": "Multi-Business Agency Plan",
+        "amount": 4999
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885529554_9amh",
+      "created_at": "2026-10-01T20:12:09.554Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790885529543_kq4bo",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885529543_qhgw",
+      "created_at": "2026-10-01T20:12:09.543Z"
+    },
+    {
+      "user_id": "usr_1790885529532_94q3f",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790885529532_94q3f",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885529533_lszb",
+      "created_at": "2026-10-01T20:12:09.533Z"
+    },
+    {
+      "user_id": "usr_1790885529416_bpke0",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790885529416_bpke0",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885529417_p82e",
+      "created_at": "2026-10-01T20:12:09.417Z"
+    },
+    {
+      "user_id": "usr_1790885516937_696c6",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790885517082_upzna",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-7082"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885517082_fuqe",
+      "created_at": "2026-10-01T20:11:57.082Z"
+    },
+    {
+      "user_id": "usr_1790885516937_696c6",
+      "action": "subscription.upgraded",
+      "entity_type": "subscription",
+      "entity_id": "sub_1790885516937",
+      "new_values": {
+        "plan_id": "plan_agency_custom",
+        "plan_name": "Multi-Business Agency Plan",
+        "amount": 4999
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885517076_fulq",
+      "created_at": "2026-10-01T20:11:57.076Z"
+    },
+    {
+      "user_id": "usr_1790885516937_696c6",
+      "action": "business.created",
+      "entity_type": "business",
+      "entity_id": "biz_1790885517065_1s8pl",
+      "new_values": {
+        "name": "Sunrise Cafe",
+        "slug": "sunrise-cafe-7065"
+      },
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885517065_plir",
+      "created_at": "2026-10-01T20:11:57.065Z"
+    },
+    {
+      "user_id": "usr_1790885517055_z3svm",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790885517055_z3svm",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885517055_jb0v",
+      "created_at": "2026-10-01T20:11:57.055Z"
+    },
+    {
+      "user_id": "usr_1790885516937_696c6",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790885516937_696c6",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790885516938_nsj1",
+      "created_at": "2026-10-01T20:11:56.938Z"
+    },
+    {
+      "user_id": "usr_1790884962355_4ug9x",
+      "action": "auth.registered",
+      "entity_type": "user",
+      "entity_id": "usr_1790884962355_4ug9x",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790884962355_e1a4",
+      "created_at": "2026-10-01T20:02:42.355Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790884958623_ce22",
+      "created_at": "2026-10-01T20:02:38.623Z"
+    },
+    {
+      "user_id": "usr_demo_002",
+      "action": "auth.login",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "id": "aud_1790884945455_tyc4",
+      "created_at": "2026-10-01T20:02:25.455Z"
+    },
+    {
+      "id": "aud_001",
+      "user_id": "usr_demo_002",
+      "action": "user.registered",
+      "entity_type": "user",
+      "entity_id": "usr_demo_002",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-01T20:02:14.821Z"
+    }
+  ],
+  "funnel_events": [
+    {
+      "funnel_id": "fnl_001",
+      "event_type": "page_view",
+      "session_id": "sess_1790938973906",
+      "visitor_id": "anon_1790938973906_9yop6y",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790938973906_xtxp",
+      "created_at": "2026-10-02T11:02:53.906Z"
+    },
+    {
+      "funnel_id": "fnl_001",
+      "event_type": "page_view",
+      "session_id": "sess_1790938936512",
+      "visitor_id": "anon_1790938936512_0uy9r9",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790938936512_pqnf",
+      "created_at": "2026-10-02T11:02:16.512Z"
+    },
+    {
+      "funnel_id": "fnl_001",
+      "event_type": "page_view",
+      "session_id": "sess_1790938917050",
+      "visitor_id": "anon_1790938917050_1vz89t",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790938917050_00gw",
+      "created_at": "2026-10-02T11:01:57.050Z"
+    },
+    {
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "event_type": "google_clicked",
+      "session_id": "sess_1790933531908",
+      "visitor_id": "vis_test_1_1790933531883",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790933531908_pd3z",
+      "created_at": "2026-10-02T09:32:11.908Z"
+    },
+    {
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "event_type": "feedback_completed",
+      "session_id": "sess_1790933531905",
+      "visitor_id": "anon_1790933531905",
+      "metadata": {
+        "rating": 5,
+        "is_positive": true
+      },
+      "id": "evt_1790933531905_eld5",
+      "created_at": "2026-10-02T09:32:11.905Z"
+    },
+    {
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "event_type": "feedback_started",
+      "session_id": "sess_1790933531900",
+      "visitor_id": "vis_test_1_1790933531883",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790933531900_3igd",
+      "created_at": "2026-10-02T09:32:11.900Z"
+    },
+    {
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "event_type": "rating_selected",
+      "session_id": "sess_1790933531894",
+      "visitor_id": "vis_test_1_1790933531883",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790933531894_wkzp",
+      "created_at": "2026-10-02T09:32:11.894Z"
+    },
+    {
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "event_type": "page_view",
+      "session_id": "s2",
+      "visitor_id": "vis_test_2_1790933531883",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790933531889_2z2a",
+      "created_at": "2026-10-02T09:32:11.889Z"
+    },
+    {
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "event_type": "page_view",
+      "session_id": "s1",
+      "visitor_id": "vis_test_1_1790933531883",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790933531885_q68n",
+      "created_at": "2026-10-02T09:32:11.885Z"
+    },
+    {
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790933531882_48q4",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "FgY9gV"
+      },
+      "id": "evt_1790933531882_pa9z",
+      "created_at": "2026-10-02T09:32:11.882Z"
+    },
+    {
+      "funnel_id": "fnl_1790933530486_6k31",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790933530508_oqqv",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "GpfAfA"
+      },
+      "id": "evt_1790933530508_t8kl",
+      "created_at": "2026-10-02T09:32:10.508Z"
+    },
+    {
+      "funnel_id": "fnl_1790933530486_6k31",
+      "event_type": "rating_selected",
+      "session_id": "sess_test_123",
+      "visitor_id": "vid_test_456",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790933530497_wodz",
+      "created_at": "2026-10-02T09:32:10.497Z"
+    },
+    {
+      "funnel_id": "fnl_1790933514896_80o0",
+      "event_type": "google_clicked",
+      "session_id": "sess_1790933514953",
+      "visitor_id": "vis_test_1_1790933514926",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790933514953_ijhl",
+      "created_at": "2026-10-02T09:31:54.953Z"
+    },
+    {
+      "funnel_id": "fnl_1790933514896_80o0",
+      "event_type": "feedback_completed",
+      "session_id": "sess_1790933514949",
+      "visitor_id": "anon_1790933514949",
+      "metadata": {
+        "rating": 5,
+        "is_positive": true
+      },
+      "id": "evt_1790933514949_cqu3",
+      "created_at": "2026-10-02T09:31:54.949Z"
+    },
+    {
+      "funnel_id": "fnl_1790933514896_80o0",
+      "event_type": "feedback_started",
+      "session_id": "sess_1790933514945",
+      "visitor_id": "vis_test_1_1790933514926",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790933514945_e675",
+      "created_at": "2026-10-02T09:31:54.945Z"
+    },
+    {
+      "funnel_id": "fnl_1790933514896_80o0",
+      "event_type": "rating_selected",
+      "session_id": "sess_1790933514940",
+      "visitor_id": "vis_test_1_1790933514926",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790933514940_7l7a",
+      "created_at": "2026-10-02T09:31:54.940Z"
+    },
+    {
+      "funnel_id": "fnl_1790933514896_80o0",
+      "event_type": "page_view",
+      "session_id": "s2",
+      "visitor_id": "vis_test_2_1790933514926",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790933514934_pbgs",
+      "created_at": "2026-10-02T09:31:54.934Z"
+    },
+    {
+      "funnel_id": "fnl_1790933514896_80o0",
+      "event_type": "page_view",
+      "session_id": "s1",
+      "visitor_id": "vis_test_1_1790933514926",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790933514929_b9lw",
+      "created_at": "2026-10-02T09:31:54.929Z"
+    },
+    {
+      "funnel_id": "fnl_1790933514896_80o0",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790933514923_n5u9",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "gwpdmm"
+      },
+      "id": "evt_1790933514923_9kaa",
+      "created_at": "2026-10-02T09:31:54.923Z"
+    },
+    {
+      "funnel_id": "fnl_1790933511148_adpo",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790933511175_l2n8",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "BBvZST"
+      },
+      "id": "evt_1790933511175_grld",
+      "created_at": "2026-10-02T09:31:51.175Z"
+    },
+    {
+      "funnel_id": "fnl_1790933511148_adpo",
+      "event_type": "rating_selected",
+      "session_id": "sess_test_123",
+      "visitor_id": "vid_test_456",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790933511160_gwj1",
+      "created_at": "2026-10-02T09:31:51.160Z"
+    },
+    {
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "event_type": "google_clicked",
+      "session_id": "sess_1790886409435",
+      "visitor_id": "vis_test_1_1790886409386",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886409435_xhlv",
+      "created_at": "2026-10-01T20:26:49.435Z"
+    },
+    {
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "event_type": "feedback_completed",
+      "session_id": "sess_1790886409427",
+      "visitor_id": "anon_1790886409427",
+      "metadata": {
+        "rating": 5,
+        "is_positive": true
+      },
+      "id": "evt_1790886409427_nypb",
+      "created_at": "2026-10-01T20:26:49.427Z"
+    },
+    {
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "event_type": "feedback_started",
+      "session_id": "sess_1790886409423",
+      "visitor_id": "vis_test_1_1790886409386",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886409423_p1ee",
+      "created_at": "2026-10-01T20:26:49.423Z"
+    },
+    {
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "event_type": "rating_selected",
+      "session_id": "sess_1790886409418",
+      "visitor_id": "vis_test_1_1790886409386",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790886409418_xlb9",
+      "created_at": "2026-10-01T20:26:49.418Z"
+    },
+    {
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "event_type": "page_view",
+      "session_id": "s2",
+      "visitor_id": "vis_test_2_1790886409386",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886409393_ajg8",
+      "created_at": "2026-10-01T20:26:49.393Z"
+    },
+    {
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "event_type": "page_view",
+      "session_id": "s1",
+      "visitor_id": "vis_test_1_1790886409386",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886409389_7x2k",
+      "created_at": "2026-10-01T20:26:49.389Z"
+    },
+    {
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790886409384_8eqd",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "KE6Lni"
+      },
+      "id": "evt_1790886409384_kuxs",
+      "created_at": "2026-10-01T20:26:49.384Z"
+    },
+    {
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "event_type": "google_clicked",
+      "session_id": "sess_1790886391137",
+      "visitor_id": "vis_test_1_1790886391108",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886391137_g6by",
+      "created_at": "2026-10-01T20:26:31.137Z"
+    },
+    {
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "event_type": "feedback_completed",
+      "session_id": "sess_1790886391135",
+      "visitor_id": "anon_1790886391135",
+      "metadata": {
+        "rating": 5,
+        "is_positive": true
+      },
+      "id": "evt_1790886391135_m5e6",
+      "created_at": "2026-10-01T20:26:31.135Z"
+    },
+    {
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "event_type": "feedback_started",
+      "session_id": "sess_1790886391130",
+      "visitor_id": "vis_test_1_1790886391108",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886391130_n0i6",
+      "created_at": "2026-10-01T20:26:31.130Z"
+    },
+    {
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "event_type": "rating_selected",
+      "session_id": "sess_1790886391124",
+      "visitor_id": "vis_test_1_1790886391108",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790886391124_4gjl",
+      "created_at": "2026-10-01T20:26:31.124Z"
+    },
+    {
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "event_type": "page_view",
+      "session_id": "s2",
+      "visitor_id": "vis_test_2_1790886391109",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886391119_6r4j",
+      "created_at": "2026-10-01T20:26:31.119Z"
+    },
+    {
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "event_type": "page_view",
+      "session_id": "s1",
+      "visitor_id": "vis_test_1_1790886391108",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886391113_j97f",
+      "created_at": "2026-10-01T20:26:31.113Z"
+    },
+    {
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790886391106_uszt",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "x8pFXR"
+      },
+      "id": "evt_1790886391106_jofi",
+      "created_at": "2026-10-01T20:26:31.106Z"
+    },
+    {
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "event_type": "google_clicked",
+      "session_id": "sess_1790886375454",
+      "visitor_id": "vis_test_1_1790886375425",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886375454_wvgs",
+      "created_at": "2026-10-01T20:26:15.454Z"
+    },
+    {
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "event_type": "feedback_completed",
+      "session_id": "sess_1790886375450",
+      "visitor_id": "anon_1790886375450",
+      "metadata": {
+        "rating": 5,
+        "is_positive": true
+      },
+      "id": "evt_1790886375450_e5go",
+      "created_at": "2026-10-01T20:26:15.450Z"
+    },
+    {
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "event_type": "feedback_started",
+      "session_id": "sess_1790886375445",
+      "visitor_id": "vis_test_1_1790886375425",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886375445_3l9w",
+      "created_at": "2026-10-01T20:26:15.445Z"
+    },
+    {
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "event_type": "rating_selected",
+      "session_id": "sess_1790886375440",
+      "visitor_id": "vis_test_1_1790886375425",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790886375440_kg5t",
+      "created_at": "2026-10-01T20:26:15.440Z"
+    },
+    {
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "event_type": "page_view",
+      "session_id": "s2",
+      "visitor_id": "vis_test_2_1790886375425",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886375434_fy88",
+      "created_at": "2026-10-01T20:26:15.434Z"
+    },
+    {
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "event_type": "page_view",
+      "session_id": "s1",
+      "visitor_id": "vis_test_1_1790886375425",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {},
+      "id": "evt_1790886375429_ackg",
+      "created_at": "2026-10-01T20:26:15.429Z"
+    },
+    {
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790886375424_cyi6",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "kJbwEy"
+      },
+      "id": "evt_1790886375424_cipb",
+      "created_at": "2026-10-01T20:26:15.424Z"
+    },
+    {
+      "funnel_id": "fnl_1790886214614_i2i6",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790886214639_99qw",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "MschEn"
+      },
+      "id": "evt_1790886214639_0vps",
+      "created_at": "2026-10-01T20:23:34.639Z"
+    },
+    {
+      "funnel_id": "fnl_1790886214614_i2i6",
+      "event_type": "rating_selected",
+      "session_id": "sess_test_123",
+      "visitor_id": "vid_test_456",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790886214625_3gsr",
+      "created_at": "2026-10-01T20:23:34.625Z"
+    },
+    {
+      "funnel_id": "fnl_1790885529575_schj",
+      "event_type": "qr_scan",
+      "session_id": "qr_1790885529595_tk19",
+      "visitor_id": "127.0.0.1",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "short_code": "F94sxc"
+      },
+      "id": "evt_1790885529595_hfw7",
+      "created_at": "2026-10-01T20:12:09.595Z"
+    },
+    {
+      "funnel_id": "fnl_1790885529575_schj",
+      "event_type": "rating_selected",
+      "session_id": "sess_test_123",
+      "visitor_id": "vid_test_456",
+      "device": "desktop",
+      "browser": "Unknown",
+      "os": "Unknown",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790885529585_mwvw",
+      "created_at": "2026-10-01T20:12:09.585Z"
+    },
+    {
+      "funnel_id": "fnl_001",
+      "event_type": "qr_scan",
+      "session_id": "qr_scan_1790885227734",
+      "visitor_id": "127.0.0.1",
+      "metadata": {
+        "short_code": "muz-rec"
+      },
+      "id": "evt_1790885227734_0ac8",
+      "created_at": "2026-10-01T20:07:07.734Z"
+    },
+    {
+      "funnel_id": "fnl_001",
+      "event_type": "feedback_completed",
+      "session_id": "sess_1790885227715",
+      "visitor_id": "127.0.0.1",
+      "metadata": {
+        "rating": 2,
+        "is_positive": false
+      },
+      "id": "evt_1790885227715_eqzf",
+      "created_at": "2026-10-01T20:07:07.715Z"
+    },
+    {
+      "funnel_id": "fnl_001",
+      "event_type": "feedback_completed",
+      "session_id": "sess_1790885227696",
+      "visitor_id": "127.0.0.1",
+      "metadata": {
+        "rating": 5,
+        "is_positive": true
+      },
+      "id": "evt_1790885227696_hb0g",
+      "created_at": "2026-10-01T20:07:07.696Z"
+    },
+    {
+      "funnel_id": "fnl_001",
+      "event_type": "rating_selected",
+      "session_id": "sess_1790885227678",
+      "visitor_id": "127.0.0.1",
+      "device": "mobile",
+      "browser": "Safari",
+      "os": "iOS",
+      "metadata": {
+        "rating": 5
+      },
+      "id": "evt_1790885227678_5m9l",
+      "created_at": "2026-10-01T20:07:07.678Z"
+    }
+  ],
+  "business_locations": [
+    {
+      "business_id": "biz_1790885529543_kq4bo",
+      "name": "Primary Location",
+      "address": "100 Beach Road",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9876543210",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790885529543_39ex",
+      "created_at": "2026-10-01T20:12:09.543Z",
+      "updated_at": "2026-10-01T20:12:09.543Z"
+    },
+    {
+      "business_id": "biz_1790885529559_9ec3a",
+      "name": "Primary Location",
+      "address": "200 Mountain Way",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790885529560_uqb2",
+      "created_at": "2026-10-01T20:12:09.560Z",
+      "updated_at": "2026-10-01T20:12:09.560Z"
+    },
+    {
+      "business_id": "biz_1790885529543_kq4bo",
+      "name": "Downtown Branch",
+      "address": "456 Central Ave",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9876543211",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790885529565_z9ts",
+      "created_at": "2026-10-01T20:12:09.565Z",
+      "updated_at": "2026-10-01T20:12:09.565Z"
+    },
+    {
+      "business_id": "biz_1790886214576_p9xrs",
+      "name": "Primary Location",
+      "address": "100 Beach Road",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9876543210",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886214576_8ans",
+      "created_at": "2026-10-01T20:23:34.576Z",
+      "updated_at": "2026-10-01T20:23:34.576Z"
+    },
+    {
+      "business_id": "biz_1790886214592_64hkn",
+      "name": "Primary Location",
+      "address": "200 Mountain Way",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886214592_7glk",
+      "created_at": "2026-10-01T20:23:34.592Z",
+      "updated_at": "2026-10-01T20:23:34.592Z"
+    },
+    {
+      "business_id": "biz_1790886214576_p9xrs",
+      "name": "Downtown Branch",
+      "address": "456 Central Ave",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9876543211",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886214600_3tzf",
+      "created_at": "2026-10-01T20:23:34.600Z",
+      "updated_at": "2026-10-01T20:23:34.600Z"
+    },
+    {
+      "business_id": "biz_1790886375402_huku9",
+      "name": "Primary Location",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9998887776",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886375402_370e",
+      "created_at": "2026-10-01T20:26:15.402Z",
+      "updated_at": "2026-10-01T20:26:15.402Z"
+    },
+    {
+      "business_id": "biz_1790886375402_huku9",
+      "name": "Downtown Analytics Branch",
+      "address": "Floor 1, Cyber City",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886375406_42j1",
+      "created_at": "2026-10-01T20:26:15.406Z",
+      "updated_at": "2026-10-01T20:26:15.406Z"
+    },
+    {
+      "business_id": "biz_1790886391076_gbh5w",
+      "name": "Primary Location",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9998887776",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886391077_m7kg",
+      "created_at": "2026-10-01T20:26:31.077Z",
+      "updated_at": "2026-10-01T20:26:31.077Z"
+    },
+    {
+      "business_id": "biz_1790886391076_gbh5w",
+      "name": "Downtown Analytics Branch",
+      "address": "Floor 1, Cyber City",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886391087_37lu",
+      "created_at": "2026-10-01T20:26:31.087Z",
+      "updated_at": "2026-10-01T20:26:31.087Z"
+    },
+    {
+      "business_id": "biz_1790886409361_6ei1h",
+      "name": "Primary Location",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9998887776",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886409361_cec4",
+      "created_at": "2026-10-01T20:26:49.361Z",
+      "updated_at": "2026-10-01T20:26:49.361Z"
+    },
+    {
+      "business_id": "biz_1790886409361_6ei1h",
+      "name": "Downtown Analytics Branch",
+      "address": "Floor 1, Cyber City",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790886409367_mz3p",
+      "created_at": "2026-10-01T20:26:49.367Z",
+      "updated_at": "2026-10-01T20:26:49.367Z"
+    },
+    {
+      "business_id": "biz_1790933505335_c7f7i",
+      "name": "Primary Location",
+      "address": "101 Health Boulevard, Sector 12",
+      "city": "Chandigarh",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933505335_f0mn",
+      "created_at": "2026-10-02T09:31:45.335Z",
+      "updated_at": "2026-10-02T09:31:45.335Z"
+    },
+    {
+      "business_id": "biz_1790933505335_c7f7i",
+      "name": "Sector 12 Main Branch",
+      "address": "101 Health Boulevard",
+      "city": "Chandigarh",
+      "state": "Punjab",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933505342_4mtw",
+      "created_at": "2026-10-02T09:31:45.342Z",
+      "updated_at": "2026-10-02T09:31:45.342Z"
+    },
+    {
+      "business_id": "biz_1790933511115_wr08y",
+      "name": "Primary Location",
+      "address": "100 Beach Road",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9876543210",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933511116_d400",
+      "created_at": "2026-10-02T09:31:51.116Z",
+      "updated_at": "2026-10-02T09:31:51.116Z"
+    },
+    {
+      "business_id": "biz_1790933511132_tfb2w",
+      "name": "Primary Location",
+      "address": "200 Mountain Way",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933511132_imny",
+      "created_at": "2026-10-02T09:31:51.132Z",
+      "updated_at": "2026-10-02T09:31:51.132Z"
+    },
+    {
+      "business_id": "biz_1790933511115_wr08y",
+      "name": "Downtown Branch",
+      "address": "456 Central Ave",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9876543211",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933511138_2wdz",
+      "created_at": "2026-10-02T09:31:51.138Z",
+      "updated_at": "2026-10-02T09:31:51.138Z"
+    },
+    {
+      "business_id": "biz_1790933514884_urcrf",
+      "name": "Primary Location",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9998887776",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933514884_pxvh",
+      "created_at": "2026-10-02T09:31:54.884Z",
+      "updated_at": "2026-10-02T09:31:54.884Z"
+    },
+    {
+      "business_id": "biz_1790933514884_urcrf",
+      "name": "Downtown Analytics Branch",
+      "address": "Floor 1, Cyber City",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933514890_u6rj",
+      "created_at": "2026-10-02T09:31:54.890Z",
+      "updated_at": "2026-10-02T09:31:54.890Z"
+    },
+    {
+      "business_id": "biz_1790933530453_vpqq9",
+      "name": "Primary Location",
+      "address": "100 Beach Road",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9876543210",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933530453_sfmf",
+      "created_at": "2026-10-02T09:32:10.453Z",
+      "updated_at": "2026-10-02T09:32:10.453Z"
+    },
+    {
+      "business_id": "biz_1790933530470_yyfex",
+      "name": "Primary Location",
+      "address": "200 Mountain Way",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933530470_hjla",
+      "created_at": "2026-10-02T09:32:10.470Z",
+      "updated_at": "2026-10-02T09:32:10.470Z"
+    },
+    {
+      "business_id": "biz_1790933530453_vpqq9",
+      "name": "Downtown Branch",
+      "address": "456 Central Ave",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9876543211",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933530476_e1bf",
+      "created_at": "2026-10-02T09:32:10.476Z",
+      "updated_at": "2026-10-02T09:32:10.476Z"
+    },
+    {
+      "business_id": "biz_1790933531859_p1tll",
+      "name": "Primary Location",
+      "address": "42 Main Boulevard",
+      "city": "",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "+91 9998887776",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933531859_svep",
+      "created_at": "2026-10-02T09:32:11.859Z",
+      "updated_at": "2026-10-02T09:32:11.859Z"
+    },
+    {
+      "business_id": "biz_1790933531859_p1tll",
+      "name": "Downtown Analytics Branch",
+      "address": "Floor 1, Cyber City",
+      "city": "Metropolis",
+      "state": "",
+      "country": "",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933531865_23zf",
+      "created_at": "2026-10-02T09:32:11.865Z",
+      "updated_at": "2026-10-02T09:32:11.865Z"
+    },
+    {
+      "business_id": "biz_1790933533268_iyhd2",
+      "name": "Primary Location",
+      "address": "101 Health Boulevard, Sector 12",
+      "city": "Chandigarh",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933533269_u8zk",
+      "created_at": "2026-10-02T09:32:13.269Z",
+      "updated_at": "2026-10-02T09:32:13.269Z"
+    },
+    {
+      "business_id": "biz_1790933533268_iyhd2",
+      "name": "Sector 12 Main Branch",
+      "address": "101 Health Boulevard",
+      "city": "Chandigarh",
+      "state": "Punjab",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933533275_vkvs",
+      "created_at": "2026-10-02T09:32:13.275Z",
+      "updated_at": "2026-10-02T09:32:13.275Z"
+    },
+    {
+      "business_id": "biz_1790933784290_jb5zh",
+      "name": "Primary Location",
+      "address": "101 Health Boulevard, Sector 12",
+      "city": "Chandigarh",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933784290_d1qy",
+      "created_at": "2026-10-02T09:36:24.290Z",
+      "updated_at": "2026-10-02T09:36:24.290Z"
+    },
+    {
+      "business_id": "biz_1790933784290_jb5zh",
+      "name": "Sector 12 Main Branch",
+      "address": "101 Health Boulevard",
+      "city": "Chandigarh",
+      "state": "Punjab",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790933784298_u1c6",
+      "created_at": "2026-10-02T09:36:24.298Z",
+      "updated_at": "2026-10-02T09:36:24.298Z"
+    },
+    {
+      "business_id": "biz_1790934348904_rnm0o",
+      "name": "Primary Location",
+      "address": "100 Medical Center Blvd",
+      "city": "New Delhi",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790934348905_3ahd",
+      "created_at": "2026-10-02T09:45:48.905Z",
+      "updated_at": "2026-10-02T09:45:48.905Z"
+    },
+    {
+      "business_id": "biz_1790934371441_ueshd",
+      "name": "Primary Location",
+      "address": "100 Medical Center Blvd",
+      "city": "New Delhi",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790934371441_lj80",
+      "created_at": "2026-10-02T09:46:11.441Z",
+      "updated_at": "2026-10-02T09:46:11.441Z"
+    },
+    {
+      "business_id": "biz_1790934396979_ql1lf",
+      "name": "Primary Location",
+      "address": "100 Medical Center Blvd",
+      "city": "New Delhi",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790934396979_4ect",
+      "created_at": "2026-10-02T09:46:36.979Z",
+      "updated_at": "2026-10-02T09:46:36.979Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "name": "Primary Location",
+      "address": "100 Medical Center Blvd",
+      "city": "New Delhi",
+      "state": "",
+      "country": "India",
+      "postal_code": "",
+      "phone": "",
+      "timezone": "UTC",
+      "status": "active",
+      "id": "loc_1790934410885_vrw0",
+      "created_at": "2026-10-02T09:46:50.885Z",
+      "updated_at": "2026-10-02T09:46:50.885Z"
+    }
+  ],
+  "analytics_daily": [
+    {
+      "business_id": "biz_1790885529543_kq4bo",
+      "location_id": "loc_1790885529565_z9ts",
+      "funnel_id": "fnl_1790885529575_schj",
+      "date": "2026-10-01",
+      "page_views": 0,
+      "qr_scans": 1,
+      "unique_visitors": 2,
+      "rating_selected": 1,
+      "feedback_started": 0,
+      "feedback_completed": 0,
+      "google_clicks": 0,
+      "id": "ad_1790886003740_cm9s",
+      "created_at": "2026-10-01T20:20:03.740Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_001",
+      "funnel_id": "fnl_001",
+      "date": "2026-10-01",
+      "page_views": 0,
+      "qr_scans": 1,
+      "unique_visitors": 1,
+      "rating_selected": 1,
+      "feedback_started": 0,
+      "feedback_completed": 2,
+      "google_clicks": 0,
+      "id": "ad_1790886003741_tgb7",
+      "created_at": "2026-10-01T20:20:03.741Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_1790886375402_huku9",
+      "location_id": "loc_1790886375406_42j1",
+      "funnel_id": "fnl_1790886375411_hcn6",
+      "date": "2026-10-01",
+      "page_views": 2,
+      "qr_scans": 1,
+      "unique_visitors": 4,
+      "rating_selected": 1,
+      "feedback_started": 1,
+      "feedback_completed": 1,
+      "google_clicks": 1,
+      "id": "ad_1790886375458_j2ka",
+      "created_at": "2026-10-01T20:26:15.458Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_1790886391076_gbh5w",
+      "location_id": "loc_1790886391087_37lu",
+      "funnel_id": "fnl_1790886391094_bdh9",
+      "date": "2026-10-01",
+      "page_views": 2,
+      "qr_scans": 1,
+      "unique_visitors": 4,
+      "rating_selected": 1,
+      "feedback_started": 1,
+      "feedback_completed": 1,
+      "google_clicks": 1,
+      "id": "ad_1790886391142_8zp3",
+      "created_at": "2026-10-01T20:26:31.142Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_1790886214576_p9xrs",
+      "location_id": "loc_1790886214600_3tzf",
+      "funnel_id": "fnl_1790886214614_i2i6",
+      "date": "2026-10-01",
+      "page_views": 0,
+      "qr_scans": 1,
+      "unique_visitors": 2,
+      "rating_selected": 1,
+      "feedback_started": 0,
+      "feedback_completed": 0,
+      "google_clicks": 0,
+      "id": "ad_1790886401728_1fm4",
+      "created_at": "2026-10-01T20:26:41.728Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_1790886409361_6ei1h",
+      "location_id": "loc_1790886409367_mz3p",
+      "funnel_id": "fnl_1790886409373_bh9v",
+      "date": "2026-10-01",
+      "page_views": 2,
+      "qr_scans": 1,
+      "unique_visitors": 4,
+      "rating_selected": 1,
+      "feedback_started": 1,
+      "feedback_completed": 1,
+      "google_clicks": 1,
+      "id": "ad_1790886409441_rrg1",
+      "created_at": "2026-10-01T20:26:49.441Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_1790933514884_urcrf",
+      "location_id": "loc_1790933514890_u6rj",
+      "funnel_id": "fnl_1790933514896_80o0",
+      "date": "2026-10-02",
+      "page_views": 2,
+      "qr_scans": 1,
+      "unique_visitors": 4,
+      "rating_selected": 1,
+      "feedback_started": 1,
+      "feedback_completed": 1,
+      "google_clicks": 1,
+      "id": "ad_1790933514957_hpdf",
+      "created_at": "2026-10-02T09:31:54.957Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_1790933531859_p1tll",
+      "location_id": "loc_1790933531865_23zf",
+      "funnel_id": "fnl_1790933531869_7sbj",
+      "date": "2026-10-02",
+      "page_views": 2,
+      "qr_scans": 1,
+      "unique_visitors": 4,
+      "rating_selected": 1,
+      "feedback_started": 1,
+      "feedback_completed": 1,
+      "google_clicks": 1,
+      "id": "ad_1790933531913_qrku",
+      "created_at": "2026-10-02T09:32:11.912Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_1790933530453_vpqq9",
+      "location_id": "loc_1790933530476_e1bf",
+      "funnel_id": "fnl_1790933530486_6k31",
+      "date": "2026-10-02",
+      "page_views": 0,
+      "qr_scans": 1,
+      "unique_visitors": 2,
+      "rating_selected": 1,
+      "feedback_started": 0,
+      "feedback_completed": 0,
+      "google_clicks": 0,
+      "id": "ad_1790933563910_zta0",
+      "created_at": "2026-10-02T09:32:43.910Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_1790933511115_wr08y",
+      "location_id": "loc_1790933511138_2wdz",
+      "funnel_id": "fnl_1790933511148_adpo",
+      "date": "2026-10-02",
+      "page_views": 0,
+      "qr_scans": 1,
+      "unique_visitors": 2,
+      "rating_selected": 1,
+      "feedback_started": 0,
+      "feedback_completed": 0,
+      "google_clicks": 0,
+      "id": "ad_1790933563910_aiv8",
+      "created_at": "2026-10-02T09:32:43.910Z",
+      "updated_at": "2026-10-02T11:02:48.636Z"
+    },
+    {
+      "business_id": "biz_001",
+      "funnel_id": "fnl_001",
+      "date": "2026-10-02",
+      "page_views": 2,
+      "qr_scans": 0,
+      "unique_visitors": 2,
+      "rating_selected": 0,
+      "feedback_started": 0,
+      "feedback_completed": 0,
+      "google_clicks": 0,
+      "id": "ad_1790938968635_n2km",
+      "created_at": "2026-10-02T11:02:48.635Z",
+      "updated_at": "2026-10-02T11:02:48.635Z"
+    }
+  ],
+  "google_location_links": [
+    {
+      "business_id": "biz_1790933505335_c7f7i",
+      "business_location_id": "loc_1790933505342_4mtw",
+      "google_connection_id": "gconn_1790933505360_dgzf",
+      "google_account_id": "accounts/10987654321",
+      "google_location_id": "locations/10987654321_01",
+      "google_location_name": "Muzaffarabad azad jamu and kashmir - Domail",
+      "google_maps_url": "https://maps.google.com/?cid=1234567890",
+      "sync_status": "idle",
+      "id": "gll_1790933505388_j50a",
+      "created_at": "2026-10-02T09:31:45.388Z",
+      "updated_at": "2026-10-02T09:31:46.653Z",
+      "last_synced_at": "2026-10-02T09:31:46.011Z"
+    },
+    {
+      "business_id": "biz_1790933533268_iyhd2",
+      "business_location_id": "loc_1790933533275_vkvs",
+      "google_connection_id": "gconn_1790933533308_n22k",
+      "google_account_id": "accounts/10987654321",
+      "google_location_id": "locations/10987654321_01",
+      "google_location_name": "Muzaffarabad azad jamu and kashmir - Domail",
+      "google_maps_url": "https://maps.google.com/?cid=1234567890",
+      "sync_status": "idle",
+      "id": "gll_1790933533340_of33",
+      "created_at": "2026-10-02T09:32:13.340Z",
+      "updated_at": "2026-10-02T09:32:14.611Z",
+      "last_synced_at": "2026-10-02T09:32:13.960Z"
+    },
+    {
+      "business_id": "biz_1790933784290_jb5zh",
+      "business_location_id": "loc_1790933784298_u1c6",
+      "google_connection_id": "gconn_1790933784318_n72y",
+      "google_account_id": "accounts/10987654321",
+      "google_location_id": "locations/10987654321_01",
+      "google_location_name": "Muzaffarabad azad jamu and kashmir - Domail",
+      "google_maps_url": "https://maps.google.com/?cid=1234567890",
+      "sync_status": "idle",
+      "id": "gll_1790933784343_quh5",
+      "created_at": "2026-10-02T09:36:24.343Z",
+      "updated_at": "2026-10-02T09:36:25.608Z",
+      "last_synced_at": "2026-10-02T09:36:24.965Z"
+    },
+    {
+      "business_id": "biz_1790934396979_ql1lf",
+      "business_location_id": "loc_1790934396979_4ect",
+      "google_connection_id": "gconn_1790934397001_qa6a",
+      "google_account_id": "accounts/10987654321",
+      "google_location_id": "locations/10001",
+      "google_location_name": "Metro Dental & Diagnostics Google",
+      "sync_status": "synced",
+      "id": "gll_1790934397012_8yv1",
+      "created_at": "2026-10-02T09:46:37.012Z",
+      "updated_at": "2026-10-02T10:44:08.069Z",
+      "last_synced_at": "2026-10-02T10:44:08.069Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "business_location_id": "loc_1790934410885_vrw0",
+      "google_connection_id": "gconn_1790934410903_6hma",
+      "google_account_id": "accounts/10987654321",
+      "google_location_id": "locations/10001",
+      "google_location_name": "Metro Dental & Diagnostics Google",
+      "sync_status": "synced",
+      "id": "gll_1790934410909_b8vm",
+      "created_at": "2026-10-02T09:46:50.909Z",
+      "updated_at": "2026-10-02T10:44:08.069Z",
+      "last_synced_at": "2026-10-02T10:44:08.069Z"
+    }
+  ],
+  "google_reviews": [
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "business_location_id": "loc_1790934410885_vrw0",
+      "google_location_link_id": "gll_1790934410909_b8vm",
+      "google_review_id": "mock_rev_001",
+      "reviewer_name": "Tariq Mehmood",
+      "reviewer_photo_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces",
+      "star_rating": 5,
+      "review_text": "Outstanding hospitality and prompt service! Scanned the QR code at reception and was delighted by the experience.",
+      "review_created_at": "2026-09-30T10:44:08.069Z",
+      "review_updated_at": "2026-09-30T10:44:08.069Z",
+      "has_reply": true,
+      "synced_at": "2026-10-02T10:44:08.069Z",
+      "id": "grev_1790933505390_v6kb2",
+      "created_at": "2026-10-02T09:31:45.390Z",
+      "updated_at": "2026-10-02T10:44:08.069Z",
+      "google_reply_text": "Thank you so much Tariq! We look forward to serving you again.",
+      "google_reply_updated_at": "2026-10-01T10:44:08.069Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "business_location_id": "loc_1790934410885_vrw0",
+      "google_location_link_id": "gll_1790934410909_b8vm",
+      "google_review_id": "mock_rev_002",
+      "reviewer_name": "Dr. Sarah Khan",
+      "reviewer_photo_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces",
+      "star_rating": 5,
+      "review_text": "Clean facilities, polite staff, and seamless process throughout. Highly recommended for everyone in the area!",
+      "review_created_at": "2026-09-27T10:44:08.069Z",
+      "review_updated_at": "2026-09-27T10:44:08.069Z",
+      "has_reply": false,
+      "synced_at": "2026-10-02T10:44:08.069Z",
+      "id": "grev_1790933505390_j1b5i",
+      "created_at": "2026-10-02T09:31:45.390Z",
+      "updated_at": "2026-10-02T10:44:08.069Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "business_location_id": "loc_1790934410885_vrw0",
+      "google_location_link_id": "gll_1790934410909_b8vm",
+      "google_review_id": "mock_rev_003",
+      "reviewer_name": "Bilal Ahmed",
+      "reviewer_photo_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces",
+      "star_rating": 4,
+      "review_text": "Great overall experience. Minor wait time during the rush hour, but staff managed everything professionally.",
+      "review_created_at": "2026-09-23T10:44:08.069Z",
+      "review_updated_at": "2026-09-23T10:44:08.069Z",
+      "has_reply": false,
+      "synced_at": "2026-10-02T10:44:08.069Z",
+      "id": "grev_1790933505390_te74i",
+      "created_at": "2026-10-02T09:31:45.390Z",
+      "updated_at": "2026-10-02T10:44:08.069Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "business_location_id": "loc_1790934410885_vrw0",
+      "google_location_link_id": "gll_1790934410909_b8vm",
+      "google_review_id": "mock_rev_004",
+      "reviewer_name": "Zainab Fatima",
+      "reviewer_photo_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=faces",
+      "star_rating": 5,
+      "review_text": "The team was very attentive to our needs. Modern atmosphere and very easy digital feedback system.",
+      "review_created_at": "2026-09-18T10:44:08.069Z",
+      "review_updated_at": "2026-09-18T10:44:08.069Z",
+      "has_reply": false,
+      "synced_at": "2026-10-02T10:44:08.069Z",
+      "id": "grev_1790933505390_duxq5",
+      "created_at": "2026-10-02T09:31:45.390Z",
+      "updated_at": "2026-10-02T10:44:08.069Z"
+    }
+  ],
+  "ai_review_analyses": [
+    {
+      "review_id": "grev_1790933505390_v6kb2",
+      "business_id": "biz_1790934410885_l7mp1",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "sentiment": "positive",
+      "urgency": "low",
+      "topics": [
+        "service",
+        "staff",
+        "speed"
+      ],
+      "summary": "The customer was highly satisfied with the prompt service and welcoming hospitality experienced at reception.",
+      "confidence": 0.98,
+      "prompt_version": "v1.0",
+      "id": "ana_1790934415793_l42c",
+      "created_at": "2026-10-02T09:46:55.793Z",
+      "updated_at": "2026-10-02T09:46:55.793Z"
+    }
+  ],
+  "ai_reply_suggestions": [
+    {
+      "review_id": "grev_1790933505390_v6kb2",
+      "business_id": "biz_1790934410885_l7mp1",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "tone": "professional",
+      "language": "en",
+      "suggestion": "Dear Tariq, thank you for sharing your wonderful feedback and for giving us a 5-star rating. We are delighted to hear that you experienced outstanding hospitality and found our check-in process smooth and prompt. Providing a seamless, comfortable visit for our patients is always our top priority. We look forward to welcoming you back to Metro Dental & Diagnostics for your future healthcare needs.",
+      "prompt_version": "v1.0",
+      "status": "generated",
+      "id": "sug_1790934420948_8iuv",
+      "created_at": "2026-10-02T09:47:00.948Z",
+      "updated_at": "2026-10-02T09:47:00.948Z"
+    },
+    {
+      "review_id": "grev_1790933505390_v6kb2",
+      "business_id": "biz_1790934410885_l7mp1",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "tone": "friendly",
+      "language": "hi",
+      "suggestion": "प्रिय तारिक जी, मेट्रो डेंटल एंड डायग्नोस्टिक्स को 5-स्टार रेटिंग देने और अपनी बहुमूल्य समीक्षा साझा करने के लिए आपका दिल से धन्यवाद। यह जानकर हमें बेहद खुशी हुई कि आपको हमारा आतिथ्य, रिसेप्शन का अनुभव और",
+      "prompt_version": "v1.0",
+      "status": "generated",
+      "id": "sug_1790934425938_r75e",
+      "created_at": "2026-10-02T09:47:05.938Z",
+      "updated_at": "2026-10-02T09:47:05.938Z"
+    },
+    {
+      "review_id": "grev_1790933505390_v6kb2",
+      "business_id": "biz_1790934410885_l7mp1",
+      "provider": "mock",
+      "model": "mock-reviewer-model",
+      "tone": "empathetic",
+      "language": "en",
+      "suggestion": "Dear Tariq Mehmood, thank you so much for taking the time to share your delightful experience with us. Knowing that our dedication made a positive impression means the world to our team at Metro Dental & Diagnostics.",
+      "prompt_version": "v1.0",
+      "status": "generated",
+      "id": "sug_1790934445490_fyut",
+      "created_at": "2026-10-02T09:47:25.490Z",
+      "updated_at": "2026-10-02T09:47:25.490Z"
+    },
+    {
+      "review_id": "grev_1790933505390_v6kb2",
+      "business_id": "biz_1790934410885_l7mp1",
+      "provider": "mock",
+      "model": "mock-reviewer-model",
+      "tone": "concise",
+      "language": "en",
+      "suggestion": "Thank you for visiting Metro Dental! Our doctors loved caring for you.",
+      "prompt_version": "v1.0",
+      "status": "published",
+      "id": "sug_1790934449647_j182",
+      "created_at": "2026-10-02T09:47:29.647Z",
+      "updated_at": "2026-10-02T09:47:29.673Z"
+    }
+  ],
+  "ai_usage_logs": [
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "user_id": "usr_1790934410752_1wytn",
+      "review_id": "grev_1790933505390_v6kb2",
+      "provider": "mock",
+      "model": "mock-reviewer-model",
+      "tokens_used": 65,
+      "action": "reply_suggestion",
+      "status": "success",
+      "id": "ai_log_1790934449647_ujem",
+      "created_at": "2026-10-02T09:47:29.647Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "user_id": "usr_1790934410752_1wytn",
+      "review_id": "grev_1790933505390_v6kb2",
+      "provider": "mock",
+      "model": "mock-reviewer-model",
+      "tokens_used": 65,
+      "action": "reply_suggestion",
+      "status": "success",
+      "id": "ai_log_1790934445490_kx4u",
+      "created_at": "2026-10-02T09:47:25.490Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "user_id": "usr_1790934410752_1wytn",
+      "review_id": "grev_1790933505390_v6kb2",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "tokens_used": 1159,
+      "action": "reply_suggestion",
+      "status": "success",
+      "id": "ai_log_1790934425938_n6xd",
+      "created_at": "2026-10-02T09:47:05.938Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "user_id": "usr_1790934410752_1wytn",
+      "review_id": "grev_1790933505390_v6kb2",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "tokens_used": 1133,
+      "action": "reply_suggestion",
+      "status": "success",
+      "id": "ai_log_1790934420947_fbl6",
+      "created_at": "2026-10-02T09:47:00.947Z"
+    },
+    {
+      "business_id": "biz_1790934410885_l7mp1",
+      "user_id": "usr_1790934410752_1wytn",
+      "review_id": "grev_1790933505390_v6kb2",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "tokens_used": 588,
+      "action": "review_analysis",
+      "status": "success",
+      "id": "ai_log_1790934415793_iujk",
+      "created_at": "2026-10-02T09:46:55.793Z"
+    }
+  ],
+  "billing_customers": [],
+  "invoices": [],
+  "webhook_events": [],
+  "usage_counters": [],
+  "feature_flags": [
+    {
+      "id": "ff_001",
+      "name": "AI Reply Suggestions",
+      "key": "ai_reply_suggestions",
+      "description": "Enables LLM-assisted draft replies for Google reviews.",
+      "enabled": true,
+      "environment": "all",
+      "created_at": "2026-10-02T10:13:42.606Z",
+      "updated_at": "2026-10-02T10:13:42.606Z"
+    },
+    {
+      "id": "ff_002",
+      "name": "Google Review Sync",
+      "key": "google_review_sync",
+      "description": "Automated 30-min background sync with Google Business Profile.",
+      "enabled": true,
+      "environment": "all",
+      "created_at": "2026-10-02T10:13:42.606Z",
+      "updated_at": "2026-10-02T10:13:42.606Z"
+    },
+    {
+      "id": "ff_003",
+      "name": "Advanced Analytics",
+      "key": "advanced_analytics",
+      "description": "Detailed NPS, funnel conversion, and star rating distribution metrics.",
+      "enabled": true,
+      "environment": "all",
+      "created_at": "2026-10-02T10:13:42.606Z",
+      "updated_at": "2026-10-02T10:13:42.606Z"
+    },
+    {
+      "id": "ff_004",
+      "name": "Agency Multi-Location Mode",
+      "key": "agency_mode",
+      "description": "Multi-business management tools and white-label QR standees.",
+      "enabled": true,
+      "environment": "all",
+      "created_at": "2026-10-02T10:13:42.606Z",
+      "updated_at": "2026-10-02T10:13:42.606Z"
+    },
+    {
+      "id": "ff_005",
+      "name": "Razorpay Billing Gateway",
+      "key": "razorpay_checkout",
+      "description": "Live recurring subscriptions and automated webhook processing.",
+      "enabled": true,
+      "environment": "all",
+      "created_at": "2026-10-02T10:13:42.606Z",
+      "updated_at": "2026-10-02T10:13:42.606Z"
+    }
+  ],
+  "system_settings": {
+    "maintenance_mode": false,
+    "new_registration_enabled": true,
+    "default_timezone": "Asia/Kolkata",
+    "default_currency": "INR",
+    "support_email": "support@reviewflowai.in",
+    "support_url": "https://reviewflowai.in/support",
+    "billing_grace_period_days": 3,
+    "default_ai_provider": "gemini",
+    "updated_at": "2026-10-02T10:13:42.791Z"
+  },
+  "failed_jobs": [],
+  "scheduler_tasks": [
+    {
+      "id": "task_001",
+      "task_name": "Analytics Rolling Aggregation",
+      "interval_minutes": 15,
+      "last_run": "2026-10-02T10:13:42.975Z",
+      "last_status": "success",
+      "last_duration_ms": 45
+    },
+    {
+      "id": "task_002",
+      "task_name": "Google Reviews Background Sync",
+      "interval_minutes": 30,
+      "last_run": "2026-10-02T10:13:42.975Z",
+      "last_status": "success",
+      "last_duration_ms": 120
+    },
+    {
+      "id": "task_003",
+      "task_name": "Billing Grace Period & Expiry Monitor",
+      "interval_minutes": 60,
+      "last_run": "2026-10-02T10:13:42.975Z",
+      "last_status": "success",
+      "last_duration_ms": 15
+    }
+  ]
+}

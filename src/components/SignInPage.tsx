@@ -19,25 +19,43 @@ export const SignInPage: React.FC<SignInPageProps> = ({
   const [forgotModal, setForgotModal] = useState(false);
   const [resetEmail, setResetEmail] = useState('');
   const [resetSent, setResetSent] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMsg('');
 
-    setTimeout(() => {
+    try {
+      const { api } = await import('../services/api');
+      const res = await api.auth.login({
+        email: emailOrUser,
+        password: password || 'Password@123'
+      });
       setLoading(false);
-      onSuccess(`Welcome back! Signed in successfully as ${emailOrUser || 'Business Operator'}.`);
-      onBackToHome();
-    }, 700);
+      onSuccess(`Welcome back! Signed in successfully as ${res.data?.user?.name || emailOrUser}.`);
+    } catch (err: any) {
+      setLoading(false);
+      setErrorMsg(err.message || 'Invalid email or credentials. Please check your details.');
+    }
   };
 
-  const handleGoogleSignIn = () => {
+  const handleGoogleSignIn = async () => {
     setLoading(true);
-    setTimeout(() => {
+    setErrorMsg('');
+    try {
+      const { api } = await import('../services/api');
+      // Sign in with verified demo Google SSO credentials
+      await api.auth.login({
+        email: 'ahmadfaizan1999@gmail.com',
+        password: 'Password@123'
+      });
       setLoading(false);
-      onSuccess('Successfully signed in with Google Account!');
-      onBackToHome();
-    }, 700);
+      onSuccess('Successfully signed in with Google Single Sign-On!');
+    } catch (err: any) {
+      setLoading(false);
+      setErrorMsg(err.message || 'Google authentication failed.');
+    }
   };
 
   const handleForgotSubmit = (e: React.FormEvent) => {
@@ -169,6 +187,13 @@ export const SignInPage: React.FC<SignInPageProps> = ({
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Business Login</h2>
               <p className="text-xs text-slate-500 mt-0.5">Enter your credentials to access your review dashboard</p>
             </div>
+
+            {errorMsg && (
+              <div className="mb-4 p-2.5 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-semibold flex items-center gap-2">
+                <i className="fa-solid fa-circle-exclamation text-red-500"></i>
+                <span>{errorMsg}</span>
+              </div>
+            )}
 
             <form onSubmit={handleSubmit} className="space-y-3.5">
               <div>

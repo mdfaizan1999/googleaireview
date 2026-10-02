@@ -1,16 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { api } from '../services/api';
 import { BusinessAnalyticsView } from './BusinessAnalyticsView';
+import { GoogleReviewsView } from './GoogleReviewsView';
 import { NegativeReviewsView } from './NegativeReviewsView';
 import { ReviewSettingsView } from './ReviewSettingsView';
 import { PhysicalStandView } from './PhysicalStandView';
 import { AiSeoAnalyzerView } from './AiSeoAnalyzerView';
 import { AddOnServicesView } from './AddOnServicesView';
+import { BillingPlansView } from './BillingPlansView';
+import { AccountSettingsView } from './AccountSettingsView';
+import { FunnelsManagementView } from './FunnelsManagementView';
+import { QrManagementView } from './QrManagementView';
+import { AdminPortalView } from './AdminPortalView';
 
 interface BusinessDashboardProps {
   businessName?: string;
   businessAddress?: string;
   businessCategory?: string;
-  initialTab?: 'dashboard' | 'analytics' | 'feedback' | 'settings' | 'stand' | 'seo' | 'services';
+  initialTab?: 'dashboard' | 'reviews' | 'analytics' | 'feedback' | 'funnels' | 'qr-manager' | 'settings' | 'stand' | 'seo' | 'services' | 'billing' | 'account' | 'admin';
   onNavigate: (view: any) => void;
   onSignOut: () => void;
   onNotify: (msg: string, type?: 'success' | 'info' | 'warning') => void;
@@ -26,11 +33,92 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
   onNotify
 }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'analytics' | 'feedback' | 'settings' | 'stand' | 'seo' | 'services' | 'qr'>(initialTab);
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'reviews' | 'analytics' | 'feedback' | 'funnels' | 'qr-manager' | 'settings' | 'stand' | 'seo' | 'services' | 'billing' | 'account' | 'qr' | 'admin'>(initialTab);
   const [standModalOpen, setStandModalOpen] = useState(false);
+
+  // Real Analytics & Funnel State
+  const [dashLoading, setDashLoading] = useState(true);
+  const [dashError, setDashError] = useState<string | null>(null);
+  const [totalData, setTotalData] = useState<any>(null);
+  const [monthlyData, setMonthlyData] = useState<any>(null);
+  const [weeklyData, setWeeklyData] = useState<any>(null);
+  const [timeseries7d, setTimeseries7d] = useState<any[]>([]);
+  const [activeFunnelsCount, setActiveFunnelsCount] = useState(1);
+  const [recentReviews, setRecentReviews] = useState<any[]>([]);
+
+  const fetchDashboardData = async () => {
+    try {
+      setDashLoading(true);
+      setDashError(null);
+
+      const today = new Date();
+      const to = today.toISOString().slice(0, 10);
+      const sevenDaysAgo = new Date(today.getTime() - 6 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+      const thirtyDaysAgo = new Date(today.getTime() - 29 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+
+      const [totRes, moRes, wkRes, tsRes, fnlRes, statsRes] = await Promise.allSettled([
+        api.analytics.getOverview({ from: '2020-01-01', to }),
+        api.analytics.getOverview({ from: thirtyDaysAgo, to }),
+        api.analytics.getOverview({ from: sevenDaysAgo, to }),
+        api.analytics.getTimeSeries({ from: sevenDaysAgo, to }),
+        api.funnels.list(),
+        api.dashboard.getStats()
+      ]);
+
+      if (totRes.status === 'fulfilled' && totRes.value?.data) {
+        setTotalData(totRes.value.data);
+      }
+      if (moRes.status === 'fulfilled' && moRes.value?.data) {
+        setMonthlyData(moRes.value.data);
+      }
+      if (wkRes.status === 'fulfilled' && wkRes.value?.data) {
+        setWeeklyData(wkRes.value.data);
+      }
+      if (tsRes.status === 'fulfilled' && tsRes.value?.data) {
+        setTimeseries7d(tsRes.value.data);
+      }
+      if (fnlRes.status === 'fulfilled' && fnlRes.value?.data) {
+        const funnels = fnlRes.value.data;
+        const active = funnels.filter((f: any) => f.enabled !== false).length;
+        setActiveFunnelsCount(Math.max(1, active));
+      }
+      if (statsRes.status === 'fulfilled' && statsRes.value?.data?.recent_reviews) {
+        setRecentReviews(statsRes.value.data.recent_reviews);
+      }
+    } catch (err: any) {
+      setDashError(err.message || 'Failed to load dashboard metrics.');
+    } finally {
+      setDashLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchDashboardData();
+  }, []);
 
   // Avatar initial
   const avatarChar = businessName.trim().charAt(0).toUpperCase() || 'M';
+
+  // Dynamic 7-day trend chart calculations
+  const last7Days = timeseries7d.slice(-7);
+  const maxDashMetric = Math.max(10, ...last7Days.map((p) => Math.max(p.page_views || 0, p.qr_scans || 0, p.rating_selected || 0, p.google_clicks || 0)));
+
+  const getDashY = (val: number) => {
+    const height = 90;
+    const padding = 25;
+    return padding + height - (val / maxDashMetric) * height;
+  };
+
+  const getDashPath = (key: 'page_views' | 'qr_scans' | 'rating_selected') => {
+    if (last7Days.length === 0) return 'M 50 120 L 650 120';
+    return last7Days
+      .map((p, i) => {
+        const x = 50 + (i / Math.max(1, last7Days.length - 1)) * 600;
+        const y = getDashY(p[key] || 0);
+        return `${i === 0 ? 'M' : 'L'} ${x} ${y}`;
+      })
+      .join(' ');
+  };
 
   const handleActionClick = (actionName: string) => {
     if (actionName === 'qr') {
@@ -131,6 +219,19 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
               </button>
 
               <button
+                onClick={() => { setActiveTab('reviews'); setSidebarOpen(false); }}
+                className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold transition-all text-left cursor-pointer ${
+                  activeTab === 'reviews' ? 'bg-white/20 text-white shadow-sm' : 'text-white/80 hover:bg-white/10 hover:text-white'
+                }`}
+              >
+                <div className="flex items-center gap-2.5">
+                  <i className="fa-brands fa-google w-4 text-center"></i>
+                  <span>Google Reviews</span>
+                </div>
+                <span className="text-[9px] font-bold bg-white/20 text-white px-1.5 py-0.2 rounded-full">Sync</span>
+              </button>
+
+              <button
                 onClick={() => { setActiveTab('analytics'); setSidebarOpen(false); }}
                 className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-bold transition-all text-left cursor-pointer ${
                   activeTab === 'analytics' ? 'bg-white/20 text-white shadow-sm' : 'text-white/80 hover:bg-white/10 hover:text-white'
@@ -159,11 +260,23 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
             </div>
             <div className="space-y-1">
               <button
-                onClick={() => { handleActionClick('qr'); setSidebarOpen(false); }}
-                className="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-white/80 hover:bg-white/10 hover:text-white transition-all text-left cursor-pointer"
+                onClick={() => { setActiveTab('funnels'); setSidebarOpen(false); }}
+                className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all text-left cursor-pointer ${
+                  activeTab === 'funnels' ? 'bg-white/20 text-white shadow-sm font-bold' : 'text-white/80 hover:bg-white/10 hover:text-white'
+                }`}
+              >
+                <i className="fa-solid fa-filter w-4 text-center"></i>
+                <span>Review Funnels</span>
+              </button>
+
+              <button
+                onClick={() => { setActiveTab('qr-manager'); setSidebarOpen(false); }}
+                className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all text-left cursor-pointer ${
+                  activeTab === 'qr-manager' ? 'bg-white/20 text-white shadow-sm font-bold' : 'text-white/80 hover:bg-white/10 hover:text-white'
+                }`}
               >
                 <i className="fa-solid fa-qrcode w-4 text-center"></i>
-                <span>Magic Review QR</span>
+                <span>QR Codes &amp; Stands</span>
               </button>
 
               <button
@@ -221,14 +334,29 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
             </div>
             <div className="space-y-1">
               <button
-                onClick={() => { handleActionClick('pricing'); setSidebarOpen(false); }}
-                className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-white/80 hover:bg-white/10 hover:text-white transition-all text-left cursor-pointer"
+                onClick={() => { setActiveTab('billing'); setSidebarOpen(false); }}
+                className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all text-left cursor-pointer ${
+                  activeTab === 'billing' ? 'bg-white/20 text-white shadow-sm font-bold' : 'text-white/80 hover:bg-white/10 hover:text-white'
+                }`}
               >
                 <div className="flex items-center gap-2.5">
                   <i className="fa-solid fa-credit-card w-4 text-center"></i>
                   <span>Billing &amp; Plans</span>
                 </div>
                 <span className="text-[9px] font-bold bg-white/20 text-white px-1.5 py-0.2 rounded-full">Free Trial</span>
+              </button>
+
+              <button
+                onClick={() => { setActiveTab('admin'); setSidebarOpen(false); }}
+                className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all text-left cursor-pointer ${
+                  activeTab === 'admin' ? 'bg-white/20 text-white shadow-sm font-bold' : 'text-white/80 hover:bg-white/10 hover:text-white'
+                }`}
+              >
+                <div className="flex items-center gap-2.5">
+                  <i className="fa-solid fa-shield-halved w-4 text-center text-amber-300"></i>
+                  <span>Admin Operations</span>
+                </div>
+                <span className="text-[9px] font-black bg-rose-500 text-white px-1.5 py-0.2 rounded-full">ADMIN</span>
               </button>
 
               <button
@@ -244,8 +372,15 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
 
         {/* Sidebar Footer User Card */}
         <div className="p-3 border-t border-white/10 space-y-2">
-          <div className="p-2.5 rounded-xl bg-white/10 border border-white/15 flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-white/20 text-white flex items-center justify-center font-black text-xs">
+          <button
+            type="button"
+            onClick={() => { setActiveTab('account'); setSidebarOpen(false); }}
+            className={`w-full p-2.5 rounded-xl border flex items-center gap-2.5 transition-all text-left cursor-pointer ${
+              activeTab === 'account' ? 'bg-white/20 border-white/30 shadow-sm' : 'bg-white/10 border-white/15 hover:bg-white/15'
+            }`}
+            title="Open Account Settings"
+          >
+            <div className="w-8 h-8 rounded-lg bg-white/20 text-white flex items-center justify-center font-black text-xs shrink-0">
               H
             </div>
             <div className="min-w-0 flex-1 text-left">
@@ -253,7 +388,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
               <div className="text-[10px] text-white/70 uppercase">Business Owner</div>
             </div>
             <i className="fa-solid fa-gear text-white/60 text-xs"></i>
-          </div>
+          </button>
 
           <button
             onClick={onSignOut}
@@ -267,7 +402,12 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
 
       {/* ═══════ MAIN CONTENT AREA ═══════ */}
       <main className="flex-1 p-4 sm:p-6 lg:p-8 pt-20 lg:pt-8 max-w-7xl mx-auto w-full">
-        {activeTab === 'analytics' ? (
+        {activeTab === 'reviews' ? (
+          <GoogleReviewsView
+            businessName={businessName}
+            onNotify={onNotify}
+          />
+        ) : activeTab === 'analytics' ? (
           <BusinessAnalyticsView
             onUpgrade={() => onNavigate('pricing')}
             onBackToDashboard={() => setActiveTab('dashboard')}
@@ -276,6 +416,19 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
           <NegativeReviewsView
             onUpgrade={() => onNavigate('pricing')}
             onNotify={onNotify}
+          />
+        ) : activeTab === 'funnels' ? (
+          <FunnelsManagementView
+            onNotify={onNotify}
+            onNavigateToQr={() => setActiveTab('qr-manager')}
+            onPreviewFunnel={(slug) => {
+              window.open(`/r/${slug}`, '_blank');
+            }}
+          />
+        ) : activeTab === 'qr-manager' ? (
+          <QrManagementView
+            onNotify={onNotify}
+            onOpenDesigner={() => onNavigate('flyer-tool')}
           />
         ) : activeTab === 'settings' ? (
           <ReviewSettingsView
@@ -303,6 +456,28 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
           />
         ) : activeTab === 'services' ? (
           <AddOnServicesView
+            onBackToDashboard={() => setActiveTab('dashboard')}
+            onNotify={onNotify}
+          />
+        ) : activeTab === 'billing' ? (
+          <BillingPlansView
+            ownerName="harsh"
+            businessName={businessName}
+            onNotify={onNotify}
+            onNavigateToDashboard={() => setActiveTab('dashboard')}
+          />
+        ) : activeTab === 'account' ? (
+          <AccountSettingsView
+            businessName={businessName}
+            initialName="harsh"
+            initialEmail="ahmadfaizan1999@gmail.com"
+            initialPhone="+91 8877307350"
+            onDeactivate={onSignOut}
+            onDeleteAccount={onSignOut}
+            onNotify={onNotify}
+          />
+        ) : activeTab === 'admin' ? (
+          <AdminPortalView
             onBackToDashboard={() => setActiveTab('dashboard')}
             onNotify={onNotify}
           />
@@ -475,6 +650,22 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
               </div>
             </div>
 
+            {/* ═══════ DASHBOARD ERROR BANNER ═══════ */}
+            {dashError && (
+              <div className="p-4 mb-4 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <i className="fa-solid fa-circle-exclamation text-red-500"></i>
+                  <span>{dashError}</span>
+                </div>
+                <button
+                  onClick={fetchDashboardData}
+                  className="px-3 py-1 bg-red-600 text-white rounded-lg font-bold text-xs hover:bg-red-700 cursor-pointer"
+                >
+                  Retry
+                </button>
+              </div>
+            )}
+
             {/* ═══════ 8 KPI METRIC CARDS ═══════ */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
               <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-left relative overflow-hidden">
@@ -482,7 +673,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   <i className="fa-solid fa-qrcode"></i>
                 </div>
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">QR Scans</div>
-                <div className="text-2xl font-black text-slate-900 mt-0.5">0</div>
+                <div className="text-2xl font-black text-slate-900 mt-0.5">{totalData?.qr_scans ?? 0}</div>
                 <span className="text-[10px] text-slate-400 mt-1 block">Total scans</span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-400"></div>
               </div>
@@ -492,7 +683,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   <i className="fa-solid fa-globe"></i>
                 </div>
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Funnel Visits</div>
-                <div className="text-2xl font-black text-slate-900 mt-0.5">0</div>
+                <div className="text-2xl font-black text-slate-900 mt-0.5">{totalData?.page_views ?? 0}</div>
                 <span className="text-[10px] text-slate-400 mt-1 block">Landing page visits</span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-400"></div>
               </div>
@@ -502,7 +693,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   <i className="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">AI Generated</div>
-                <div className="text-2xl font-black text-slate-900 mt-0.5">0</div>
+                <div className="text-2xl font-black text-slate-900 mt-0.5">{totalData?.rating_selected ?? 0}</div>
                 <span className="text-[10px] text-slate-400 mt-1 block">AI review drafts</span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 to-amber-400"></div>
               </div>
@@ -512,7 +703,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   <i className="fa-solid fa-check"></i>
                 </div>
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Reviews Selected</div>
-                <div className="text-2xl font-black text-slate-900 mt-0.5">0</div>
+                <div className="text-2xl font-black text-slate-900 mt-0.5">{totalData?.feedback_completed ?? 0}</div>
                 <span className="text-[10px] text-slate-400 mt-1 block">Chosen by customers</span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 to-green-500"></div>
               </div>
@@ -522,7 +713,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   <i className="fa-solid fa-chart-line"></i>
                 </div>
                 <div className="text-[10px] uppercase font-bold text-white/80 tracking-wider">Scan &rarr; Review</div>
-                <div className="text-2xl font-black text-white mt-0.5">0%</div>
+                <div className="text-2xl font-black text-white mt-0.5">{totalData?.conversion_rates?.overall ?? 0}%</div>
                 <span className="text-[10px] text-white/70 mt-1 block">Conversion rate</span>
                 <div className="absolute -bottom-2 -right-2 w-16 h-16 rounded-full bg-white/10 pointer-events-none"></div>
               </div>
@@ -532,7 +723,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   <i className="fa-solid fa-calendar-days"></i>
                 </div>
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">This Month</div>
-                <div className="text-2xl font-black text-slate-900 mt-0.5">0</div>
+                <div className="text-2xl font-black text-slate-900 mt-0.5">{monthlyData?.feedback_completed ?? 0}</div>
                 <span className="text-[10px] text-slate-400 mt-1 block">Monthly selected</span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 to-green-500"></div>
               </div>
@@ -542,7 +733,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   <i className="fa-solid fa-magnifying-glass-chart"></i>
                 </div>
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Monthly Scans</div>
-                <div className="text-2xl font-black text-slate-900 mt-0.5">0</div>
+                <div className="text-2xl font-black text-slate-900 mt-0.5">{monthlyData?.qr_scans ?? 0}</div>
                 <span className="text-[10px] text-slate-400 mt-1 block">Monthly QR scans</span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-400"></div>
               </div>
@@ -552,7 +743,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   <i className="fa-solid fa-satellite-dish"></i>
                 </div>
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Active Funnel</div>
-                <div className="text-2xl font-black text-slate-900 mt-0.5">1</div>
+                <div className="text-2xl font-black text-slate-900 mt-0.5">{activeFunnelsCount}</div>
                 <span className="text-[10px] text-slate-400 mt-1 block">Live review funnel</span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 to-green-500"></div>
               </div>
@@ -562,7 +753,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
             <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 mb-5 shadow-sm text-left">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div>
-                  <div className="text-[10px] uppercase font-bold text-emerald-700 tracking-wider">Analytics</div>
+                  <div className="text-[10px] uppercase font-bold text-emerald-700 tracking-wider">Analytics Engine</div>
                   <h3 className="text-sm sm:text-base font-black text-slate-900">Performance Trends</h3>
                   <p className="text-xs text-slate-400">
                     See how customers move from QR scan to funnel visit and selected review over the last 7 days.
@@ -585,7 +776,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
 
                   {/* Scans Curve (Green) */}
                   <path
-                    d="M 50 120 Q 150 115, 250 110 T 450 100 T 650 90"
+                    d={getDashPath('qr_scans')}
                     fill="none"
                     stroke="#34A853"
                     strokeWidth="3"
@@ -593,7 +784,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   />
                   {/* Visits Curve (Blue) */}
                   <path
-                    d="M 50 120 Q 150 118, 250 112 T 450 105 T 650 98"
+                    d={getDashPath('page_views')}
                     fill="none"
                     stroke="#3B82F6"
                     strokeWidth="2.5"
@@ -601,7 +792,7 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   />
                   {/* Selected Curve (Purple) */}
                   <path
-                    d="M 50 120 Q 150 119, 250 116 T 450 112 T 650 106"
+                    d={getDashPath('rating_selected')}
                     fill="none"
                     stroke="#8B5CF6"
                     strokeWidth="2.5"
@@ -609,19 +800,22 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                   />
 
                   {/* Day Labels */}
-                  {['Thu', 'Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed'].map((day, idx) => (
-                    <text
-                      key={day}
-                      x={50 + idx * 100}
-                      y="145"
-                      textAnchor="middle"
-                      fill="#94a3b8"
-                      fontSize="11"
-                      fontWeight="600"
-                    >
-                      {day}
-                    </text>
-                  ))}
+                  {last7Days.map((item, idx) => {
+                    const label = item.date ? item.date.slice(5) : `D${idx + 1}`;
+                    return (
+                      <text
+                        key={item.date || idx}
+                        x={50 + (idx / Math.max(1, last7Days.length - 1)) * 600}
+                        y="145"
+                        textAnchor="middle"
+                        fill="#94a3b8"
+                        fontSize="11"
+                        fontWeight="600"
+                      >
+                        {label}
+                      </text>
+                    );
+                  })}
                 </svg>
               </div>
             </div>
@@ -649,24 +843,24 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                       <tbody className="divide-y divide-slate-100 font-medium text-slate-700">
                         <tr>
                           <td className="py-2.5 font-bold text-slate-900">Weekly</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right font-extrabold text-emerald-600">0</td>
+                          <td className="py-2.5 text-right">{weeklyData?.qr_scans ?? 0}</td>
+                          <td className="py-2.5 text-right">{weeklyData?.page_views ?? 0}</td>
+                          <td className="py-2.5 text-right">{weeklyData?.rating_selected ?? 0}</td>
+                          <td className="py-2.5 text-right font-extrabold text-emerald-600">{weeklyData?.feedback_completed ?? 0}</td>
                         </tr>
                         <tr>
                           <td className="py-2.5 font-bold text-slate-900">Monthly</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right font-extrabold text-emerald-600">0</td>
+                          <td className="py-2.5 text-right">{monthlyData?.qr_scans ?? 0}</td>
+                          <td className="py-2.5 text-right">{monthlyData?.page_views ?? 0}</td>
+                          <td className="py-2.5 text-right">{monthlyData?.rating_selected ?? 0}</td>
+                          <td className="py-2.5 text-right font-extrabold text-emerald-600">{monthlyData?.feedback_completed ?? 0}</td>
                         </tr>
                         <tr>
                           <td className="py-2.5 font-bold text-slate-900">Total</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right">0</td>
-                          <td className="py-2.5 text-right font-extrabold text-emerald-600">0</td>
+                          <td className="py-2.5 text-right">{totalData?.qr_scans ?? 0}</td>
+                          <td className="py-2.5 text-right">{totalData?.page_views ?? 0}</td>
+                          <td className="py-2.5 text-right">{totalData?.rating_selected ?? 0}</td>
+                          <td className="py-2.5 text-right font-extrabold text-emerald-600">{totalData?.feedback_completed ?? 0}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -675,16 +869,47 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
 
                 {/* Recent QR Code Events */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 shadow-sm">
-                  <h3 className="text-sm font-black text-slate-900 mb-0.5">Recent QR Code Events</h3>
-                  <p className="text-xs text-slate-400 mb-3">Real-time feed of client actions in your review loop.</p>
-
-                  <div className="border border-dashed border-slate-200 rounded-xl p-8 text-center space-y-1.5 bg-slate-50/50">
-                    <div className="w-9 h-9 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto text-sm">
-                      <i className="fa-solid fa-chart-simple"></i>
+                  <div className="flex items-center justify-between mb-3">
+                    <div>
+                      <h3 className="text-sm font-black text-slate-900 mb-0.5">Recent Activity Feed</h3>
+                      <p className="text-xs text-slate-400">Real-time feed of client actions in your review loop.</p>
                     </div>
-                    <h4 className="text-xs font-bold text-slate-600">No activity yet</h4>
-                    <p className="text-[11px] text-slate-400">Share your QR code flyer to start collecting customer reviews!</p>
+                    <button
+                      onClick={() => setActiveTab('analytics')}
+                      className="text-xs font-bold text-emerald-700 hover:underline cursor-pointer"
+                    >
+                      View Analytics &rarr;
+                    </button>
                   </div>
+
+                  {recentReviews && recentReviews.length > 0 ? (
+                    <div className="divide-y divide-slate-100">
+                      {recentReviews.slice(0, 4).map((r: any) => (
+                        <div key={r.id} className="py-2.5 flex items-start justify-between gap-3 text-xs">
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-2">
+                              <span className="font-bold text-slate-800">{r.customer_name || 'Customer'}</span>
+                              <span className="text-amber-500 font-bold">
+                                {'★'.repeat(r.rating || 5)}
+                              </span>
+                            </div>
+                            <p className="text-slate-600 text-[11px] truncate mt-0.5">{r.comment || 'Verified review submission'}</p>
+                          </div>
+                          <span className="text-[10px] text-slate-400 shrink-0">
+                            {r.created_at ? new Date(r.created_at).toLocaleDateString() : 'Recent'}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="border border-dashed border-slate-200 rounded-xl p-8 text-center space-y-1.5 bg-slate-50/50">
+                      <div className="w-9 h-9 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto text-sm">
+                        <i className="fa-solid fa-chart-simple"></i>
+                      </div>
+                      <h4 className="text-xs font-bold text-slate-600">No recent activity yet</h4>
+                      <p className="text-[11px] text-slate-400">Share your QR code flyer or preview the review funnel to start collecting analytics!</p>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -713,19 +938,35 @@ export const BusinessDashboard: React.FC<BusinessDashboardProps> = ({
                     </button>
 
                     <button
-                      onClick={() => onNotify('AI Reply Assistant loaded: Ready to auto-draft responses.', 'info')}
+                      onClick={() => setActiveTab('reviews')}
                       className="w-full p-2.5 bg-slate-50 hover:bg-blue-50/60 border border-slate-200 hover:border-blue-300 rounded-xl flex items-center justify-between text-left transition-all cursor-pointer group"
                     >
                       <div className="flex items-center gap-2.5">
                         <div className="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center text-xs">
-                          <i className="fa-solid fa-robot"></i>
+                          <i className="fa-brands fa-google"></i>
                         </div>
                         <div>
-                          <strong className="block text-xs text-slate-900 group-hover:text-blue-800">AI Reply Assistant</strong>
-                          <span className="text-[10px] text-slate-400">Manage and respond to customer reviews</span>
+                          <strong className="block text-xs text-slate-900 group-hover:text-blue-800">Google Reviews &amp; Replies</strong>
+                          <span className="text-[10px] text-slate-400">Sync ratings &amp; publish owner replies</span>
                         </div>
                       </div>
                       <i className="fa-solid fa-arrow-right text-xs text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition-all"></i>
+                    </button>
+
+                    <button
+                      onClick={() => setActiveTab('reviews')}
+                      className="w-full p-2.5 bg-slate-50 hover:bg-purple-50/60 border border-slate-200 hover:border-purple-300 rounded-xl flex items-center justify-between text-left transition-all cursor-pointer group"
+                    >
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center text-xs">
+                          <i className="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div>
+                          <strong className="block text-xs text-slate-900 group-hover:text-purple-800">AI Review Assistant</strong>
+                          <span className="text-[10px] text-slate-400">Generate reply drafts &amp; analyze sentiment</span>
+                        </div>
+                      </div>
+                      <i className="fa-solid fa-arrow-right text-xs text-slate-400 group-hover:text-purple-600 group-hover:translate-x-0.5 transition-all"></i>
                     </button>
                   </div>
                 </div>

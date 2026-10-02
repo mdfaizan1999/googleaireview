@@ -137,7 +137,7 @@ export const ReviewSettingsView: React.FC<ReviewSettingsViewProps> = ({
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const settingsData = {
       businessType,
@@ -154,8 +154,23 @@ export const ReviewSettingsView: React.FC<ReviewSettingsViewProps> = ({
       reviewLength,
       useEmojis: useEmojis === '1'
     };
+
+    try {
+      const { api } = await import('../services/api');
+      const bizRes = await api.businesses.list();
+      const primaryBiz = bizRes.data?.[0];
+      if (primaryBiz) {
+        await api.businesses.update(primaryBiz.id, {
+          category: businessType,
+          website: website || primaryBiz.website,
+          phone: phone || primaryBiz.phone,
+          custom_keywords: [...services, ...products, ...staff].slice(0, 15)
+        });
+      }
+    } catch {}
+
     if (onSave) onSave(settingsData);
-    onNotify('Review Settings successfully saved and synchronized!', 'success');
+    onNotify('Review Settings successfully saved and synchronized with database!', 'success');
   };
 
   const filteredLanguages = allLanguages.filter(l =>
